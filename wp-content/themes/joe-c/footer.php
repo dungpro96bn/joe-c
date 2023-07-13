@@ -4,7 +4,7 @@
 
 <footer id="footer" class="footer">
     <div class="footer-top">
-        
+
     </div><!-- .footer-top -->
     <div class="footer-bottom">
 

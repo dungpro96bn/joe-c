@@ -35,14 +35,16 @@
 
     <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>?ver=<?php echo rand(); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
+
+    <script src="https://kit.fontawesome.com/1ba81f99bb.js" crossorigin="anonymous"></script>
     <?php
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), '2.2.4');
     wp_head();
     ?>
-    <script src="<?php bloginfo('template_directory'); ?>/js/jquery.cookie.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/js/css-vars-ponyfill.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/js/ajaxzip3.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.cookie.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
