@@ -32,7 +32,7 @@ function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcr
 	global $post;
 	global $homeName;
 	if ($homeName == '') {
-		$homeName = 'HOME';
+		$homeName = 'TOP　>';
 	}
 	$str ='';
 	if(!is_home()&&!is_admin()){

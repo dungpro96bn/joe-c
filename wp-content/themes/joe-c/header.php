@@ -20,21 +20,13 @@
         ?></title>
 
     <!--Font CDN-->
-    <script>
-        (function(d) {
-            var config = {
-                    kitId: 'awg6uyv',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ckd7dvg.css">
     <!--End Font CDN-->
 
     <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>?ver=<?php echo rand(); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/slick.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
 
     <script src="https://kit.fontawesome.com/1ba81f99bb.js" crossorigin="anonymous"></script>
@@ -43,6 +35,9 @@
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), '2.2.4');
     wp_head();
     ?>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/gsap.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/app.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.cookie.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 </head>
@@ -51,23 +46,48 @@
 <div class="outer">
     <header id="header-menu" class="header-menu">
         <div class="header-nav">
-            <p class="header-logo">
+            <div class="header-logo">
                 <a href="<?php echo do_shortcode('[homePath]'); ?>">
                     <picture>
-                        <source media="(max-width: 959px)"
-                                srcset="<?php echo do_shortcode('[uploadPath]'); ?>logo_sp.png 2x">
-                        <source media="(min-width: 960px)"
-                                srcset="<?php echo do_shortcode('[uploadPath]'); ?>logo_pc.png 2x">
-                        <img class="sizes" src="<?php echo do_shortcode('[uploadPath]'); ?>logo_pc.png"
-                             alt="<?php bloginfo('name'); ?>">
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/joe-logo.svg">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/joe-logo.svg" alt="<?php bloginfo('name'); ?>">
                     </picture>
                 </a>
-            </p><!-- .header-logo -->
-            <nav class="nav-items modal-menu modal-off">
-                <div class="nav-item-list">
-
-                </div><!-- .nav-item-list -->
+            </div><!-- .header-logo -->
+            <nav class="nav-menu">
+                <ul class="nav-item-list">
+                    <li class="menu-item">
+                        <a href="#"><span>JOEについて</span></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#"><span>事業紹介</span></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#"><span>スペシャルコンテンツ</span></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#"><span>お知らせ</span></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#"><span>メディア</span></a>
+                    </li>
+                </ul><!-- .nav-item-list -->
+                <div class="contact-menu">
+                    <a href="/contact/">
+                        <span class="en">Contact</span>
+                        <span class="icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5.918" height="10.422" viewBox="0 0 5.918 10.422">
+                          <path id="Path_63967" data-name="Path 63967" d="M1267.837,60.546l4.857,4.857-4.857,4.857" transform="translate(-1267.483 -60.192)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+                        </svg>
+                    </span>
+                    </a>
+                </div>
             </nav><!-- .nav-items -->
+            <div class="btn-openMenu">
+                <div class="toggle-btn">
+                    <span></span>
+                </div>
+            </div>
         </div><!-- .header-nav -->
     </header><!-- #header-menu -->
 
