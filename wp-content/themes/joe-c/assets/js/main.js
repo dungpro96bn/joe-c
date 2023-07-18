@@ -28,6 +28,15 @@ jQuery(function ($) {
             "    <path id=\"Path_63963\" data-name=\"Path 63963\" d=\"M1241.366,4277.84l28.16,28.16-28.16,28.16\" transform=\"translate(-1241.366 -4277.84)\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"2\"/>\n" +
             "  </g>\n" +
             "</svg></button>",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: false
+                }
+            }
+        ]
     });
 
 
@@ -115,7 +124,7 @@ jQuery(function ($) {
 
     //Open Menu
     $("#header-menu .btn-openMenu").click(function () {
-        $("#header-menu .nav-menu").toggleClass("is-open");
+        $("#header-menu .main-menu").toggleClass("is-open");
         $(this).toggleClass("is-open");
         $("body").toggleClass("is-active");
     });

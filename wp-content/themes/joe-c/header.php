@@ -28,6 +28,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/slick.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/contact.css">
 
     <script src="https://kit.fontawesome.com/1ba81f99bb.js" crossorigin="anonymous"></script>
     <?php
@@ -38,7 +39,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/gsap.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/app.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.cookie.min.js"></script>
+<!--    <script src="--><?php //bloginfo('template_directory'); ?><!--/assets/js/jquery.cookie.min.js"></script>-->
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 </head>
 
@@ -54,35 +55,37 @@
                     </picture>
                 </a>
             </div><!-- .header-logo -->
-            <nav class="nav-menu">
-                <ul class="nav-item-list">
-                    <li class="menu-item">
-                        <a href="#"><span>JOEについて</span></a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#"><span>事業紹介</span></a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#"><span>スペシャルコンテンツ</span></a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#"><span>お知らせ</span></a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#"><span>メディア</span></a>
-                    </li>
-                </ul><!-- .nav-item-list -->
-                <div class="contact-menu">
-                    <a href="/contact/">
-                        <span class="en">Contact</span>
-                        <span class="icon-btn">
+            <div class="main-menu">
+                <nav class="nav-menu">
+                    <ul class="nav-item-list">
+                        <li class="menu-item">
+                            <a href="#"><span>JOEについて</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#"><span>事業紹介</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#"><span>スペシャルコンテンツ</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#"><span>お知らせ</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#"><span>メディア</span></a>
+                        </li>
+                    </ul><!-- .nav-item-list -->
+                    <div class="contact-menu">
+                        <a href="/contact/">
+                            <span class="en">Contact</span>
+                            <span class="icon-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="5.918" height="10.422" viewBox="0 0 5.918 10.422">
                           <path id="Path_63967" data-name="Path 63967" d="M1267.837,60.546l4.857,4.857-4.857,4.857" transform="translate(-1267.483 -60.192)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
                         </svg>
                     </span>
-                    </a>
-                </div>
-            </nav><!-- .nav-items -->
+                        </a>
+                    </div>
+                </nav><!-- .nav-items -->
+            </div>
             <div class="btn-openMenu">
                 <div class="toggle-btn">
                     <span></span>

@@ -99,7 +99,7 @@ body {
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    background: #E6E6E6;
+    background-color: #E6E6E6;
 }
 
 body,
@@ -110,14 +110,15 @@ body * {
     font-feature-settings: normal;
 }
 
-/*body.is-active{*/
-/*    overflow: hidden;*/
-/*}*/
+body.is-active{
+    overflow: hidden;
+}
 
 body,
 input,
 textarea,
-select {
+select,
+button{
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -268,6 +269,10 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0 20px;
 }
 
+.sp-br{
+    display: none;
+}
+
 .u-inview{
     opacity: 0;
     transform: translateY(20px);
@@ -280,6 +285,11 @@ body::-webkit-scrollbar-thumb:hover {
     transition-timing-function: cubic-bezier(.61,1,.88,1);
     transition-duration: .4s,.4s;
     transition-property: opacity,transform;
+}
+
+body{
+    background-image: url("/wp-content/uploads/bg_border.png");
+    background-position: center;
 }
 
 
@@ -341,9 +351,11 @@ body::-webkit-scrollbar-thumb:hover {
     background: #000;
 }
 #header-menu .nav-menu{
-    width: calc(100% - 100px);
     display: flex;
     flex-wrap: wrap;
+}
+#header-menu .main-menu{
+    width: calc(100% - 100px);
 }
 #header-menu .nav-item-list{
     display: flex;
@@ -379,9 +391,20 @@ body::-webkit-scrollbar-thumb:hover {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 3px;
+    position: relative;
+}
+#footer .footer-top:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/wp-content/uploads/border_contact_pc.png");
+    background-position: center;
 }
 #footer .footer-top .contact-banner{
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 #footer .heading{
     margin-bottom: 32px;
@@ -412,7 +435,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #footer .btn-contact{
     display: flex;
-    width: 313px;
+    max-width: 313px;
     margin: auto;
     background: #fff;
     border: 1px solid #fff;
@@ -557,6 +580,13 @@ body::-webkit-scrollbar-thumb:hover {
         height: 80px;
     }
     #header-menu .nav-menu{
+        width: 100%;
+        display: block;
+        overflow-y: scroll;
+        max-height: calc(100% - 80px);
+        padding: 30px 0;
+    }
+    #header-menu .main-menu{
         position: absolute;
         height: calc(100vh - 80px);
         top: 100%;
@@ -564,13 +594,14 @@ body::-webkit-scrollbar-thumb:hover {
         left: 0;
         background: #E6E6E6;
         z-index: 99;
-        display: block;
         overflow-y: scroll;
-        padding-top: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         opacity: 0;
         visibility: hidden;
     }
-    #header-menu .nav-menu.is-open{
+    #header-menu .main-menu.is-open{
         opacity: 1;
         visibility: visible;
     }
@@ -683,7 +714,115 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
+@media (max-width: 767px) {
 
+    body{
+        background-image: url("/wp-content/uploads/bg_border_sp.png");
+    }
+
+    .inner{
+        padding: 0 23px;
+    }
+
+    .pc-br{
+        display: none;
+    }
+    .sp-br{
+        display: block;
+    }
+
+
+
+    #header-menu .header-logo {
+        width: 58px;
+    }
+    #header-menu .header-nav{
+        height: 60px;
+    }
+    #header-menu .btn-openMenu{
+        top: 5px;
+    }
+
+
+
+    #footer .footer-top{
+        background-image: url("/wp-content/uploads/bg_banner_contact_sp.png");
+        height: 290px;
+        padding-top: 0px;
+    }
+    #footer .footer-top:after{
+        background-image: url("/wp-content/uploads/border_contact_sp.png");
+    }
+    #footer .heading .ttl-en {
+        font-size: 51px;
+        line-height: 50px;
+        display: block;
+        color: #fff;
+        font-weight: 500;
+    }
+    #footer .heading .ttl-ja {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 3px;
+    }
+    #footer .heading {
+        margin-bottom: 19px;
+    }
+    #footer .footer-top .text {
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 0;
+        margin-bottom: 12px;
+    }
+    #footer .btn-contact{
+        max-width: 297px;
+        height: 65px;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        padding-left: 37px;
+    }
+    #footer .btn-contact .icon-btn{
+        right: 18px;
+        width: 35px;
+        height: 35px;
+    }
+    #footer .logo-footer img {
+        max-width: 37px;
+    }
+    #footer .footer-bottom .inner{
+        padding: 0 12px 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 54px;
+    }
+    #footer .footer-bottom .copyright {
+        font-size: 10px;
+        line-height: 20px;
+        padding-right: 0;
+        letter-spacing: 1.2px;
+        width: calc(100% - 37px);
+    }
+
+
+    #back-top{
+        right: 0;
+    }
+    #back-top a{
+        width: 65px;
+        height: 65px;
+        font-size: 15px;
+        padding-top: 16px;
+    }
+    #back-top a svg {
+        width: 14px;
+        margin-bottom: 4px;
+        height: auto;
+    }
+
+
+
+
+}
 
 
 
