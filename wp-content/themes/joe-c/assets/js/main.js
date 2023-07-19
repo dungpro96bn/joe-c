@@ -1,7 +1,7 @@
 jQuery(function ($) {
 
     //Heading animation homepage
-    $(document).ready(function () {
+    jQuery(window).load(function() {
         gsap.to(".char", {
             opacity: 1,
             filter: "blur(0px)",
