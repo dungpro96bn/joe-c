@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/slick.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/contact.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/news.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/page-custom.css">
 
     <script src="https://kit.fontawesome.com/1ba81f99bb.js" crossorigin="anonymous"></script>
     <?php
@@ -59,19 +61,19 @@
                 <nav class="nav-menu">
                     <ul class="nav-item-list">
                         <li class="menu-item">
-                            <a href="#"><span>JOEについて</span></a>
+                            <a href="/about/"><span>JOEについて</span></a>
                         </li>
                         <li class="menu-item">
-                            <a href="#"><span>事業紹介</span></a>
+                            <a href="/business/"><span>事業紹介</span></a>
                         </li>
                         <li class="menu-item">
-                            <a href="#"><span>スペシャルコンテンツ</span></a>
+                            <a href="/talk/"><span>スペシャルコンテンツ</span></a>
                         </li>
                         <li class="menu-item">
-                            <a href="#"><span>お知らせ</span></a>
+                            <a href="/news/"><span>お知らせ</span></a>
                         </li>
                         <li class="menu-item">
-                            <a href="#"><span>メディア</span></a>
+                            <a href="/media/"><span>メディア</span></a>
                         </li>
                     </ul><!-- .nav-item-list -->
                     <div class="contact-menu">

@@ -1,0 +1,339 @@
+
+.page-main{
+    position: relative;
+}
+.page-main .bg-page{
+    position: absolute;
+    top: -413px;
+    right: 0;
+    pointer-events: none;
+    width: 1800px;
+}
+.page-main .page-content{
+    position: relative;
+    z-index: 2;
+}
+
+/*About us*/
+/*==================================*/
+#about{
+    padding-bottom: 100px;
+}
+#about .message-about{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 82px;
+    padding-bottom: 100px;
+}
+#about.page-container .header-entry{
+    padding-bottom: 123px;
+}
+#about .message-about:after{
+    content: "";
+    position: absolute;
+    width: 10000px;
+    height: 100%;
+    background: rgba(255,255,255,.40);
+    right: 196px;
+    top: 0;
+    z-index: -1;
+}
+#about .message-about .info-content{
+    width: 59.5%;
+    padding-right: 50px;
+}
+#about .message-about .image-content{
+    width: 40.5%;
+    padding-top: 18px;
+}
+#about .message-about .info-content .title{
+    font-size: 54px;
+    line-height: 76px;
+    font-weight: bold;
+    margin-bottom: 57px;
+}
+#about .message-about .info-content .textInfo{
+    margin-bottom: 30px;
+}
+#about .message-about .info-content .textInfo p{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    letter-spacing: 0.8px;
+}
+#about .message-about .info-content .textInfo p:last-child{
+    margin-bottom: 0;
+}
+#about .message-about .sign .ttl{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#about .overview-block {
+    padding-top: 106px;
+}
+#about .overview-block .title{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 21px;
+}
+#about .overview-block .overview-item{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ACACAC;
+}
+#about .overview-block .overview-item:first-child{
+    border-top: 1px solid #ACACAC;
+}
+#about .overview-block .overview-item .ttl{
+    width: 250px;
+    background: rgba(255,255,255,.20);
+    font-size: 18px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.4px;
+    padding-left: 4px;
+}
+#about .overview-block .overview-item .info{
+    width: calc(100% - 250px);
+    font-size: 18px;
+    line-height: 40px;
+    padding: 59px 38px;
+    letter-spacing: 1.4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+
+
+    #about .message-about .info-content .title {
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    #about .message-about .info-content .textInfo p {
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 500;
+        margin-bottom: 32px;
+        letter-spacing: 0.8px;
+    }
+    #about .message-about .sign .ttl {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 1.6px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    #about .message-about .sign svg{
+        width: 180px;
+        height: auto;
+    }
+    #about .overview-block .overview-item .info{
+        width: calc(100% - 200px);
+        font-size: 16px;
+        line-height: 32px;
+        padding: 45px 30px;
+    }
+    #about .overview-block .overview-item .ttl {
+        width: 200px;
+        font-size: 16px;
+        line-height: 32px;
+        padding-left: 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .page-main .bg-page {
+        top: -20px;
+        width: 110%;
+    }
+
+
+    /*About us*/
+    /*=================================*/
+    #about {
+        padding-bottom: 90px;
+    }
+    #about.page-container .header-entry {
+        padding-bottom: 48px;
+    }
+    #about .message-about .info-content {
+        width: 100%;
+        padding-right: 0;
+        order: 2;
+    }
+    #about .message-about .image-content {
+        width: 100%;
+        padding-top: 0;
+        order: 1;
+        padding-right: 21px;
+        margin-bottom: 22px;
+    }
+    #about .message-about {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0;
+        padding-bottom: 43px;
+    }
+    #about .message-about .info-content .title {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+    #about .message-about .info-content .textInfo p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 22px;
+        letter-spacing: 0.6px;
+    }
+    #about .message-about .info-content .textInfo {
+        margin-bottom: 26px;
+    }
+    #about .message-about .sign .ttl {
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 1.2px;
+        margin-bottom: 6px;
+    }
+    #about .message-about .sign svg {
+        width: 161px;
+        position: relative;
+        margin-left: -5px;
+    }
+    #about .message-about:after {
+        width: calc(100% + 30px);
+        height: calc(100% - 127px);
+        right: 0;
+        top: 127px;
+    }
+
+    #about .overview-block {
+        padding-top: 77px;
+    }
+    #about .overview-block .title {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1.6px;
+        margin-bottom: 14px;
+    }
+    #about .overview-block .overview-item .ttl {
+        width: 30.4%;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0;
+        background: #fff;
+        text-align: center;
+    }
+    #about .overview-block .overview-item .info {
+        width: calc(100% - 30.4%);
+        font-size: 14px;
+        line-height: 22px;
+        padding: 18px 0px 18px 14px;
+        letter-spacing: 0px;
+    }
+    #about .overview-block .overview-item .info p{
+        margin-bottom: 14px;
+    }
+    #about .overview-block .overview-item .info p:last-child{
+        margin-bottom: 0;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

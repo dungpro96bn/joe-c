@@ -27,6 +27,15 @@ function my_theme_widgets_init() {
 }
 add_action('widgets_init', 'my_theme_widgets_init');
 
+//function pine_add_page_slug_body_class( $classes ) {
+//    global $post;
+//    if ( isset( $post ) ) {
+//        $classes[] = 'page-' . $post->post_name;
+//    }
+//    return $classes;
+//}
+//add_filter( 'body_class', 'pine_add_page_slug_body_class' );
+
 //パンくずリスト
 function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcrumb")){
 	global $post;
@@ -53,48 +62,6 @@ function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcr
 				}
 			}
 			$str.='<li>'. $cat -> name . '</li>';
-		} elseif(is_single()){
-			$categories = get_the_category($post->ID);
-			$cat = $categories[0];
-			if($cat -> parent != 0){
-				$ancestors = array_reverse(get_ancestors( $cat -> cat_ID, 'category' ));
-				foreach($ancestors as $ancestor){
-					$str.='<li><a href="'. get_category_link($ancestor).'">'. get_cat_name($ancestor). '</a></li>';
-				}
-			}
-			$str.='<li><a href="'. get_category_link($cat -> term_id). '">'. $cat-> cat_name . '</a></li>';
-			$str.= '<li>'. $post -> post_title .'</li>';
-		} elseif(is_page()){
-			if($post -> post_parent != 0 ){
-				$ancestors = array_reverse(get_post_ancestors( $post->ID ));
-				foreach($ancestors as $ancestor){
-					$str.='<li><a href="'. get_permalink($ancestor).'">'. get_the_title($ancestor) .'</a></li>';
-				}
-			}
-			$str.= '<li>'. $post -> post_title .'</li>';
-		} elseif(is_date()){
-			if(get_query_var('day') != 0){
-				$str.='<li><a href="'. get_year_link(get_query_var('year')). '">' . get_query_var('year'). '年</a></li>';
-				$str.='<li><a href="'. get_month_link(get_query_var('year'), get_query_var('monthnum')). '">'. get_query_var('monthnum') .'月</a></li>';
-				$str.='<li>'. get_query_var('day'). '日</li>';
-			} elseif(get_query_var('monthnum') != 0){
-				$str.='<li><a href="'. get_year_link(get_query_var('year')) .'">'. get_query_var('year') .'年</a></li>';
-				$str.='<li>'. get_query_var('monthnum'). '月</li>';
-			} else {
-				$str.='<li>'. get_query_var('year') .'年</li>';
-			}
-		} elseif(is_search()) {
-			$str.='<li>「'. get_search_query() .'」で検索した結果</li>';
-		} elseif(is_author()){
-			$str .='<li>投稿者 : '. get_the_author_meta('display_name', get_query_var('author')).'</li>';
-		} elseif(is_tag()){
-			$str.='<li>タグ : '. single_tag_title( '' , false ). '</li>';
-		} elseif(is_attachment()){
-			$str.= '<li>'. $post -> post_title .'</li>';
-		} elseif(is_404()){
-			$str.='<li>ページがみつかりません。</li>';
-		} else{
-			$str.='<li>'. wp_title('', true) .'</li>';
 		}
 		$str.='</ol>';
 		$str.='</div>';
