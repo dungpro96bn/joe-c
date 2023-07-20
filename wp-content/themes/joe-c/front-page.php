@@ -229,7 +229,7 @@
                                 'post_status' => 'publish',
                                 'orderby' => 'date',
                                 'order' => 'DESC',
-                                'posts_per_page' => '2',
+                                'posts_per_page' => '5',
                             );
                             $post_list = get_posts($args);
                             if ($post_list) : ?>
@@ -256,14 +256,10 @@
                                                         <div class="author-img">
                                                             <?php echo get_avatar( get_the_author_meta( 'ID' )); ?>
                                                         </div>
-                                                        <?php
-                                                        $current_user = wp_get_current_user();
-                                                        $myuserlogin = $current_user->display_name;
-                                                        ?>
                                                         <div class="author-info">
-                                                            <p class="author-name"><?php echo $myuserlogin;?></p>
-                                                            <?php $current_user = wp_get_current_user(); ?>
-                                                            <p class="author-position"><?php the_field('position', 'user_' . $current_user->ID) ?></p>
+                                                            <p class="author-name"><?php echo get_the_author(); ?></p>
+                                                            <p class="author-position"><?php $author_id = get_the_author_meta( 'ID' );
+                                                                echo get_field('position', 'user_'. $author_id ); ?></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -277,7 +273,7 @@
                 </div>
                 <div class="media-content">
                     <div class="link-page u-inview">
-                        <a href="#" class="btn-view">VIEW ALL</a>
+                        <a href="/media/" class="btn-view">VIEW ALL</a>
                     </div>
                 </div>
             </div>

@@ -135,6 +135,10 @@ body .en select {
     font-family: "oswald", sans-serif;
 }
 
+body .noto-sjp{
+    font-family: 'Noto Serif JP', serif;
+}
+
 main {
     flex: 1 1 auto;
     min-height: 50vh;
