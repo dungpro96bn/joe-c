@@ -490,6 +490,23 @@
 
 /*business-tabs*/
 /*====================================*/
+#business{
+    padding-bottom: 90px;
+}
+#business .bg-02{
+    position: absolute;
+    top: 21.08%;
+    right: -140px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+#business .bg-03{
+    position: absolute;
+    top: 39.08%;
+    left: 0px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
 #business.page-container .header-entry{
     padding-bottom: 123px;
 }
@@ -499,6 +516,10 @@
 }
 #business .business-tabs .business-tab{
     position: relative;
+}
+#business .business-tabs .business-tab picture img{
+    min-height: 240px;
+    object-fit: cover;
 }
 #business .business-tabs .business-tab .number{
     font-size: 70px;
@@ -546,6 +567,9 @@
 }
 #business .banner .image img{
     width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
 }
 #business .banner{
     position: relative;
@@ -598,7 +622,7 @@
 }
 #business .banner .banner-info .text{
     font-size: 20px;
-    line-height: 40px;
+    line-height: 2;
     font-weight: 500;
 }
 #business .banner .banner-info .text-info{
@@ -648,6 +672,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     margin-bottom: 45px;
+    position: relative;
 }
 #business .flow-item .number{
     width: 140px;
@@ -720,7 +745,7 @@
 }
 #business .support .text-description{
     font-size: 20px;
-    line-height: 40px;
+    line-height: 2;
     font-weight: 500;
     padding-left: 5px;
     margin-bottom: 61px;
@@ -787,6 +812,9 @@
     padding-top: 147px;
     padding-bottom: 63px;
 }
+#business .support .support-list .item-sp{
+    display: none;
+}
 #business .support .support-list:before{
     content: "";
     position: absolute;
@@ -811,6 +839,9 @@
     width: calc(100% - 143px);
     padding-left: 37px;
     padding-top: 5px;
+}
+#business .support .support-item .info .icon-sp{
+    display: none;
 }
 #business .support .support-item .title{
     font-size: 26px;
@@ -852,6 +883,8 @@
     flex-wrap: wrap;
     z-index: 2;
     padding-top: 95px;
+    margin-bottom: 63px;
+    padding-bottom: 96px;
 }
 #business .business-point:after{
     content: "";
@@ -859,7 +892,7 @@
     width: 10000px;
     height: 100%;
     background: rgba(255,255,255,.40);
-    right: 0;
+    right: 22%;
     top: 0;
     z-index: -1;
 }
@@ -870,11 +903,11 @@
     max-width: 855px;
     margin: 0 0 0 auto;
     padding-left: 25px;
-    padding-right: 80px;
+    padding-right: 70px;
 }
-#business .business-point.point-01  .image-content{
+#business .business-point.point-01 .image-content{
     width: 36.9%;
-    padding-right: 113px;
+    padding-right: 6.25%;
     padding-top: 52px;
 }
 #business .business-point .point-title{
@@ -887,6 +920,15 @@
     width: 100px;
     color: #466E91;
     font-weight: 300;
+    position: relative;
+}
+#business .business-point .point-title .ttl-en:after{
+    content: "";
+    position: absolute;
+    height: calc(100% + 15px);
+    border-left: 1px solid #83ADD1;
+    top: -5px;
+    right: 4px;
 }
 #business .business-point .point-title .ttl{
     width: calc(100% - 100px);
@@ -905,18 +947,86 @@
     font-size: 56px;
     line-height: 60px;
     display: block;
-    padding-left: 6px;
     letter-spacing: 2px;
 }
 #business .business-point .text-description .text{
     font-size: 20px;
-    line-height: 40px;
+    line-height: 2;
     font-weight: 500;
     margin-bottom: 40px;
 }
 #business .business-point .text-description .text:last-child{
     margin-bottom: 0;
 }
+#business .business-point .point-infoItem{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 29px;
+}
+#business .business-point .point-infoItem:last-child{
+    margin-bottom: 0;
+}
+#business .business-point .point-infoItem .icon{
+    width: 143px;
+}
+#business .business-point .point-infoItem .info{
+    width: calc(100% - 143px);
+    padding-left: 28px;
+}
+#business .business-point .text-description{
+    margin-bottom: 45px;
+}
+#business .business-point .text-description:last-child{
+    margin-bottom: 0;
+}
+#business .business-point .point-infoItem .title{
+    font-size: 26px;
+    line-height: 36px;
+    color: #466E91;
+    font-weight: 500;
+    border-bottom: 1px solid #83ADD1;
+    padding-left: 2px;
+    padding-bottom: 8px;
+    margin-bottom: 22px;
+}
+#business .business-point .point-infoItem .title .icon-sp{
+    display: none;
+}
+#business .business-point .point-infoItem .text{
+    font-size: 18px;
+    line-height: 34px;
+    padding-left: 3px;
+}
+#business .business-point.point-02 .image-content {
+    width: 47.5%;
+    padding-top: 7px;
+    padding-left: 20px;
+}
+#business .business-point.point-02 .image-content picture{
+    display: block;
+    max-width: 550px;
+    margin: 0 0 0 auto;
+}
+#business .business-point.point-02 .text-content{
+    width: 52.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#business .business-point.point-02 .text-content .text-inner{
+    width: 100%;
+    max-width: 680px;
+    padding-right: 20px;
+    padding-left: 74px;
+    padding-top: 37px;
+}
+#business .business-point.point-02 .point-title{
+    margin-bottom: 64px;
+}
+#business .business-point.point-02:after{
+    right: unset;
+    left: 28.5%;
+}
 
 
 
@@ -926,7 +1036,114 @@
 
 
 
+@media (max-width: 1440px) {
 
+
+    #business .business-point.point-01 .text-content{
+        width: 52.5%;
+    }
+    #business .business-point.point-01 .image-content{
+        width: 47.5%;
+        padding-right: 20px;
+    }
+    #business .business-point.point-01 .image-content picture{
+        max-width: 550px;
+        display: block;
+    }
+    #business .business-point .text-description .text{
+        font-size: 16px;
+    }
+    #business .business-point .point-infoItem .icon{
+        width: 100px;
+    }
+    #business .business-point .point-infoItem .info {
+        width: calc(100% - 100px);
+    }
+    #business .business-point .point-infoItem .title{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+    #business .business-point .point-infoItem .text{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    #business .business-point .point-title .ttl{
+        font-size: 34px;
+        line-height: 52px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 1280px) {
+
+    #business .banner .banner-info .title{
+        font-size: 40px;
+        line-height: 46px;
+    }
+    #business .banner .banner-info .text{
+        font-size: 16px;
+    }
+    #business .banner .info-inner{
+        width: 58%;
+        max-width: 743px;
+        color: #fff;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #business .banner .banner-info .number{
+        font-size: 44px;
+        padding: 0 2px 5px;
+    }
+    #business .heading-block .ttl-en{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #business .heading-block .ttl-ja{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    #business .flow-item .flow-info .text {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    #business .flow-item .flow-info .ttl{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    #business .flow-item .number{
+        font-size: 50px;
+    }
+    #business .support .text-description{
+        font-size: 18px;
+    }
+    #business .support .support-title .ttl{
+        font-size: 24px;
+        line-height: 38px;
+    }
+    #business .support .support-title .text {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #business .support .support-item .icon {
+        width: 100px;
+    }
+    #business .support .support-item .info {
+        width: calc(100% - 100px);
+    }
+
+
+
+}
 
 
 
@@ -1048,6 +1265,176 @@
         font-size: 15px;
         line-height: 20px;
     }
+
+
+    /*business*/
+    /*===============================*/
+    #business .business-tabs .business-tab .number{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    #business .business-tabs .business-tab .text{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    #business .business-tabs .business-tab .info svg{
+        width: 20px;
+        height: auto;
+    }
+    #business .description .title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    #business .description .text{
+        font-size: 16px;
+        line-height: 2;
+    }
+    #business .banner .banner-info .title {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        padding-left: 0;
+    }
+    #business .banner .banner-info .number {
+        font-size: 30px;
+        line-height: 30px;
+        padding: 0 2px 5px;
+    }
+    #business .banner .banner-info .text {
+        font-size: 14px;
+    }
+    #business .banner .info-inner{
+        padding-right: 35px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    #business .heading-block .ttl-en {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    #business .heading-block .ttl-ja {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    #business .flow-item .number{
+        width: 100px;
+        font-size: 40px;
+    }
+    #business .flow-item:after{
+        width: 50px;
+    }
+    #business .flow-item .image {
+        width: calc(100% - 52.5% - 100px);
+    }
+    #business .flow-item{
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    #business .flow-item .flow-info{
+        padding-right: 20px;
+    }
+    #business .flow-item .flow-info .text {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #business .flow-item .flow-info .ttl {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    #business .support .text-description{
+        font-size: 14px;
+    }
+    #business .support .support-title .number-ttl{
+        width: 72px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #business .support .support-title .info {
+        width: calc(100% - 72px);
+        padding-left: 30px;
+    }
+    #business .support .support-title .ttl {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #business .support .support-title{
+        padding-right: 12px;
+    }
+    #business .support .support-title .text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    #business .support .support-item .title{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #business .support .support-item .text {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #business .support .support-item .title small {
+        font-size: 13px;
+        padding-left: 14px;
+    }
+    #business .business-point.point-01 .text-content .text-inner{
+        padding-right: 20px;
+    }
+    #business .business-point .text-description .text{
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+    #business .business-point .point-title .ttl-en .t1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    #business .business-point .point-title .ttl-en .t2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    #business .business-point .point-title .ttl-en{
+        width: 75px;
+    }
+    #business .business-point .point-title .ttl {
+        font-size: 22px;
+        line-height: 38px;
+        width: calc(100% - 75px);
+        padding-left: 20px;
+    }
+    #business .business-point .point-infoItem .icon {
+        width: 80px;
+    }
+    #business .business-point .point-infoItem .info {
+        width: calc(100% - 80px);
+        padding-left: 15px;
+    }
+    #business .business-point .point-infoItem .title {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 12px;
+        padding-bottom: 4px;
+    }
+    #business .business-point .point-infoItem .text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #business .business-point.point-02 .text-content .text-inner{
+        padding-left: 25px;
+        padding-top: 0;
+    }
+    #business .business-point.point-02 .point-title {
+        margin-bottom: 40px;
+    }
+    #business .business-point .text-description {
+        margin-bottom: 30px;
+    }
+
+
 
 
 
@@ -1363,6 +1750,432 @@
         letter-spacing: 0;
         padding-left: 0;
     }
+
+
+
+    /*business*/
+    /*======================================*/
+    #business.page-container .header-entry {
+        padding-bottom: 48px;
+    }
+    #business .business-tabs .business-tab picture img {
+        min-height: 90px;
+        object-fit: cover;
+    }
+    #business .business-tabs .business-tab .number {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 0;
+        letter-spacing: 1px;
+        padding-left: 0;
+    }
+    #business .business-tabs .business-tab .text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: -8px;
+        letter-spacing: 1px;
+        padding-left: 0px;
+    }
+    #business .business-tabs .business-tab .info svg {
+        width: 10px;
+        height: auto;
+    }
+    #business .description .title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 11px;
+    }
+    #business .description .text {
+        font-size: 14px;
+        line-height: 24px;
+        padding-left: 8px;
+    }
+    #business .description {
+        padding-top: 28px;
+    }
+    #business .business-content {
+        padding-top: 52px;
+    }
+    #business .banner .banner-info {
+        position: relative;
+        width: 100%;
+        bottom: unset;
+        left: 0;
+        margin-top: -44px;
+    }
+    #business .banner .info-inner {
+        padding-right: 20px;
+        padding-top: 26px;
+        padding-bottom: 21px;
+        max-width: 100%;
+        width: 100%;
+    }
+    #business .banner .banner-info .inner{
+        padding-left: 19px;
+    }
+    #business .banner .banner-info .number {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0 0px 4px;
+        letter-spacing: 2px;
+        font-weight: 200;
+        margin-bottom: 5px;
+    }
+    #business .banner .banner-info .title {
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 1.4px;
+        margin-bottom: 11px;
+        padding-left: 2px;
+    }
+    #business .banner .banner-info .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #business #business-01 .banner {
+        padding-bottom: 0;
+        margin-bottom: 83px;
+    }
+    #business .heading-block {
+        padding-left: 0;
+    }
+    #business #business-01 .banner {
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+    #business .heading-block .ttl-ja {
+        font-size: 25px;
+        line-height: 26px;
+    }
+    #business .heading-block .ttl-ja {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    #business .banner .image img{
+        min-height: auto;
+    }
+    #business .flow-list {
+        padding-left: 16px;
+        position: relative;
+        padding-top: 26px;
+        padding-bottom: 62px;
+    }
+    #business .flow-list:before{
+        left: 2px;
+    }
+    #business .flow-item .number,
+    #business .flow-item .image{
+        display: none;
+    }
+    #business .flow-item .flow-info {
+        padding-right: 20px;
+        width: 100%;
+    }
+    #business .heading-block .ttl-en {
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+    #business .flow-item .flow-info .img-sp {
+        display: block;
+        margin-bottom: 8px;
+    }
+    #business .flow-item .flow-info .ttl .number-sp {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    #business .flow-item .flow-info .ttl {
+        font-size: 17px;
+        line-height: 33px;
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+    }
+    #business .flow-item .flow-info {
+        padding-right: 0;
+        width: 100%;
+    }
+    #business .flow-item .flow-info .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #business .flow-item {
+        margin-bottom: 26px;
+        padding: 10px 22px 13px 18px;
+    }
+    #business .flow-item:before{
+        width: 10px;
+        height: 10px;
+        top: 28px;
+        left: -19px;
+        transform: unset;
+    }
+    #business .flow-item:after {
+        width: 28px;
+        top: 33px;
+        left: -14px;
+        transform: unset;
+        border-color: #466E91;
+    }
+    #business .support {
+        padding-top: 29px;
+        padding-bottom: 19px;
+    }
+    #business .support .heading-block {
+        margin-bottom: 8px;
+    }
+    #business .support .text-description {
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 0;
+        margin-bottom: 22px;
+    }
+    #business .support .support-title .text{
+        display: none;
+    }
+    #business .support .support-title {
+        padding-right: 12px;
+        width: 83%;
+        padding-top: 16px;
+        padding-bottom: 18px;
+        max-width: 400px;
+    }
+    #business .support .support-title .ttl {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+    #business .support .support-title .number-ttl:after {
+        height: 100%;
+        top: 1px;
+        right: 1px;
+    }
+    #business .support .support-list .item-sp{
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+        color: #466E91;
+        margin-bottom: 11px;
+    }
+    #business .support .support-title .number-ttl {
+        width: 41px;
+        font-size: 30px;
+        line-height: 30px;
+        padding-left: 0;
+    }
+    #business .support .support-title .info {
+        width: calc(100% - 41px);
+        padding-left: 13px;
+    }
+    #business .support .support-list{
+        margin-top: -36px;
+        padding-right: 20px;
+        padding-top: 52px;
+        padding-bottom: 20px;
+    }
+    #business .support .support-item .icon {
+        display: none;
+    }
+    #business .support .support-item .info {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    #business .support .support-item .title{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 0;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 9px;
+        padding-bottom: 0;
+    }
+    #business .support .support-item .info .icon-sp{
+        display: block;
+        width: 71px;
+    }
+    #business .support .support-item .info .sub-text{
+        width: calc(100% - 71px);
+        padding-left: 12px;
+        padding-top: 0px;
+    }
+    #business .support .support-item .text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #business .support .support-item{
+        margin-bottom: 13px;
+    }
+    #business .support .support-content {
+        margin-bottom: 25px;
+    }
+    #business .support .support-title.support-title-02{
+        width: 89%;
+    }
+    #business .support .support-item .title small {
+        font-size: 12px;
+        padding-left: 0;
+        display: block;
+        margin-top: 4px;
+    }
+    #business #business-02 .banner {
+        padding-bottom: 0;
+    }
+    #business .business-map {
+        padding-top: 45px;
+        padding-bottom: 0;
+        text-align: center;
+        position: relative;
+        margin-left: -3px;
+        margin-right: -3px;
+    }
+    #business .business-map picture{
+        display: block;
+        max-width: 440px;
+        margin: auto;
+    }
+    #business .business-point {
+        z-index: 2;
+        padding-top: 46px;
+        margin-bottom: 63px;
+        padding-bottom: 96px;
+    }
+    #business .business-point.point-01 .text-content {
+        width: 100%;
+        order: 2;
+    }
+    #business .business-point.point-01 .image-content {
+        width: 100%;
+        padding: 0 43px 0 22px;
+        order: 1;
+        margin-bottom: 25px;
+    }
+    #business .business-point:after {
+        width: 100%;
+        height: calc(100% - 144px);
+        right: 23px;
+        top: 144px;
+    }
+    #business .business-point .point-title .ttl-en {
+        width: 50px;
+    }
+    #business .business-point .point-title .ttl {
+        font-size: 21px;
+        line-height: 27px;
+        width: calc(100% - 50px);
+        padding-left: 13px;
+    }
+    #business .business-point .point-title{
+        margin-bottom: 12px;
+    }
+    #business .business-point .text-description .text {
+        font-size: 14px;
+        line-height: 22px;
+        padding-right: 18px;
+        letter-spacing: 0.6px;
+    }
+    #business .business-point .point-infoItem .title .icon-sp{
+        display: block;
+        width: 71px;
+    }
+    #business .business-point .point-infoItem .icon{
+        display: none;
+    }
+    #business .business-point .point-title .ttl-en .t2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #business .business-point .point-title .ttl-en .t1 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #business .business-point.point-01 .text-content .text-inner{
+        padding: 0 23px;
+    }
+    #business .business-point .point-infoItem .title {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+        border-bottom: 0;
+    }
+    #business .business-point .point-infoItem .title .sub-text{
+        width: calc(100% - 71px);
+        padding-left: 12px;
+    }
+    #business .business-point .point-infoItem .info {
+        width: 100%;
+        padding-left: 0;
+    }
+    #business .business-point .text-description {
+        margin-bottom: 21px;
+    }
+    #business .business-point .point-infoList{
+        padding-right: 20px;
+    }
+    #business .business-point .point-infoItem {
+        margin-bottom: 12px;
+    }
+    #business .business-point .point-infoItem .text {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+    }
+    #business .business-point{
+        margin-bottom: 0px;
+        padding-bottom: 38px;
+    }
+    #business .business-point.point-02 .image-content {
+        width: 100%;
+        padding: 0 43px 0 23px;
+        margin-bottom: 19px;
+    }
+    #business .business-point.point-02 .text-content .text-inner {
+        padding: 0 23px;
+    }
+    #business .business-point.point-02 .text-content {
+        width: 100%;
+    }
+    #business .business-point .text-description .text {
+        font-size: 14px;
+        line-height: 22px;
+        padding-right: 20px;
+        letter-spacing: 0.6px;
+        margin-bottom: 22px;
+    }
+    #business .business-point.point-02:after {
+        left: unset;
+        right: 23px;
+    }
+    #business .business-point.point-02 .point-title {
+        margin-bottom: 18px;
+    }
+    #business .business-point .point-title .ttl-en:after {
+        height: 100%;
+        top: 2px;
+        right: 2px;
+    }
+    #business .bg-02,
+    #business .bg-03{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
