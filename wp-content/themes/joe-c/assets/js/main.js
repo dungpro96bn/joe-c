@@ -12,6 +12,26 @@ jQuery(function ($) {
                 from: "random",
             }
         });
+
+        $(window).scroll(function () {
+            $('.border-animation').each(function () {
+                var ptop = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height() - 150;
+                if (scroll > ptop - windowHeight) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+        $('.border-animation').each(function () {
+            var ptop = $(this).offset().top;
+            var firstView = $(window).scrollTop();
+            var windowHeight = $(window).height() - 150;
+            if (firstView > ptop - windowHeight) {
+                $(this).addClass('active');
+            }
+        });
+
     });
 
 
@@ -43,26 +63,7 @@ jQuery(function ($) {
     //border animation
     $(document).ready(function () {
         $(window).scroll(function () {
-            $('.border-animation').each(function () {
-                var ptop = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height() - 150;
-                if (scroll > ptop - windowHeight) {
-                    $(this).addClass('active');
-                }
-            });
-        });
-        $('.border-animation').each(function () {
-            var ptop = $(this).offset().top;
-            var firstView = $(window).scrollTop();
-            var windowHeight = $(window).height() - 150;
-            if (firstView > ptop - windowHeight) {
-                $(this).addClass('active');
-            }
-        });
-
-        $(window).scroll(function () {
-            $('.u-inview').each(function () {
+            $('.u-inview, .u-inview-left').each(function () {
                 var ptop = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height() - 200;
@@ -71,7 +72,8 @@ jQuery(function ($) {
                 }
             });
         });
-        $('.u-inview').each(function () {
+
+        $('.u-inview, .u-inview-left').each(function () {
             var ptop = $(this).offset().top;
             var firstView = $(window).scrollTop();
             var windowHeight = $(window).height() - 200;
@@ -126,6 +128,7 @@ jQuery(function ($) {
     $("#header-menu .btn-openMenu").click(function () {
         $("#header-menu .main-menu").toggleClass("is-open");
         $(this).toggleClass("is-open");
+        $("html, body").animate({ scrollTop: 0 }, 200);
         $("body").toggleClass("is-active");
     });
 

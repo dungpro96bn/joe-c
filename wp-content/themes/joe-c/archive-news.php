@@ -13,7 +13,14 @@ global $post;
     <div class="header-entry">
         <div class="inner">
             <h1 class="heading u-inview">
-                <span class="ttl-en">NEWS</span>
+                <span class="ttl-en border-animation index-module--kv__title--1oLHB">
+                    <span class="word">
+                        <span class="char">N</span>
+                        <span class="char">E</span>
+                        <span class="char">W</span>
+                        <span class="char">S</span>
+                    </span>
+                </span>
                 <span class="ttl-ja">お知らせ</span>
             </h1>
         </div>

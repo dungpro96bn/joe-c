@@ -13,7 +13,17 @@
         <div class="header-entry">
             <div class="inner">
                 <h1 class="heading u-inview">
-                    <span class="ttl-en">ABOUT US</span>
+                    <span class="ttl-en border-animation index-module--kv__title--1oLHB">
+                        <span class="word">
+                            <span class="char">A</span>
+                            <span class="char">B</span>
+                            <span class="char">O</span>
+                            <span class="char">U</span>
+                            <span class="char">T&nbsp;</span>
+                            <span class="char">U</span>
+                            <span class="char">S</span>
+                        </span>
+                    </span>
                     <span class="ttl-ja">JOEについて</span>
                 </h1>
             </div>
@@ -21,7 +31,7 @@
 
         <div class="about-content page-content">
             <div class="inner">
-                <div class="message-about">
+                <div class="message-about border-animation">
                     <div class="info-content">
                         <h2 class="title u-inview">一人でも多くの方へ<br/>豊かな人生の創出を</h2>
                         <div class="textInfo">

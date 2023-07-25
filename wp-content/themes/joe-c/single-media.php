@@ -14,7 +14,15 @@ global $current_user;
         <div class="header-entry">
             <div class="inner">
                 <h1 class="heading u-inview">
-                    <span class="ttl-en">MEDIA</span>
+                    <span class="ttl-en border-animation index-module--kv__title--1oLHB">
+                        <span class="word">
+                            <span class="char">M</span>
+                            <span class="char">E</span>
+                            <span class="char">D</span>
+                            <span class="char">I</span>
+                            <span class="char">A</span>
+                        </span>
+                    </span>
                     <span class="ttl-ja">みる、よむ、JOE</span>
                 </h1>
             </div>

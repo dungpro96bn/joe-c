@@ -10,9 +10,22 @@
     font-weight: 500;
     color: #fff;
     letter-spacing: 0.4px;
-    border-bottom: 1px solid #ACACAC;
+    /*border-bottom: 1px solid #ACACAC;*/
     padding-bottom: 24px;
     margin-bottom: 26px;
+    position: relative;
+}
+.page-container .header-entry .ttl-en:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-top: 1px solid #ACACAC;
+    transition: 1.2s cubic-bezier(.43,.05,.17,1);
+}
+.page-container .header-entry .ttl-en.active:after{
+    width: 100%;
 }
 .page-container .header-entry .ttl-ja{
     display: block;

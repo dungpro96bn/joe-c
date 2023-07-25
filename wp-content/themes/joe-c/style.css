@@ -291,6 +291,20 @@ body::-webkit-scrollbar-thumb:hover {
     transition-property: opacity,transform;
 }
 
+.u-inview-left{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.u-inview-left.is-inview{
+    opacity: 1;
+    transform: translateX(0);
+}
+.u-inview-left.is-inview {
+    transition-timing-function: cubic-bezier(.61,1,.88,1);
+    transition-duration: .4s,.4s;
+    transition-property: opacity,transform;
+}
+
 body{
     background-image: url("/wp-content/uploads/bg_border.png");
     background-position: center;
@@ -750,6 +764,9 @@ body{
     }
     #header-menu .btn-openMenu{
         top: 5px;
+    }
+    #header-menu .main-menu{
+        height: calc(100vh - 60px);
     }
 
 

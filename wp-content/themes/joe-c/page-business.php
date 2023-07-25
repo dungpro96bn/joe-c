@@ -29,7 +29,18 @@
         <div class="header-entry">
             <div class="inner">
                 <h1 class="heading u-inview">
-                    <span class="ttl-en">BUSINESS</span>
+                    <span class="ttl-en border-animation index-module--kv__title--1oLHB">
+                        <span class="word">
+                            <span class="char">B</span>
+                            <span class="char">U</span>
+                            <span class="char">S</span>
+                            <span class="char">I</span>
+                            <span class="char">N</span>
+                            <span class="char">E</span>
+                            <span class="char">S</span>
+                            <span class="char">S</span>
+                        </span>
+                    </span>
                     <span class="ttl-ja">事業紹介</span>
                 </h1>
             </div>
