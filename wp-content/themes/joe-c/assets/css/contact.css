@@ -144,18 +144,34 @@
 #contact .group-item .input-field input{
     border: 0;
     font-size: 20px;
-    height: 36px;
-    padding: 0 26px;
+    height: 72px;
+    padding: 0 26px 35px;
     letter-spacing: 1.6px;
+    border-bottom: 1px solid #C4C4C4;
 }
 #contact .group-item .input-field{
-    border-bottom: 1px solid #C4C4C4;
-    padding-bottom: 35px;
+    /*border-bottom: 1px solid #C4C4C4;*/
+    /*padding-bottom: 35px;*/
+}
+#contact .group-item .input-field.field-error input{
+    border-color: #C40000;
+}
+#contact .group-item .input-field.field-error textarea{
+    border-color: #C40000;
+}
+#contact .mw_wp_form .error{
+    font-size: 14px;
+    line-height: 20px;
+    color: #C40000;
+    margin-top: 15px;
 }
 #contact .group-item .container-input.half-item{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 54px;
+}
+#contact .group-item .container-input.half-item .input-field:nth-child(1) .error{
+    /*display: none;*/
 }
 #contact .group-item .input-field input::-webkit-input-placeholder {
     color: #7E7E7E;
@@ -193,8 +209,8 @@
 }
 #contact .group-item .mwform-checkbox-field input{
     opacity: 0;
-    width: 0;
-    height: 0;
+    width: 0 !important;
+    height: 0 !important;
     overflow: hidden;
 }
 #contact .group-item .mwform-checkbox-field .mwform-checkbox-field-text:before {
@@ -234,7 +250,10 @@
     margin-bottom: 0;
 }
 #contact .group-item:nth-child(6){
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;*/
+}
+#contact .group-item:nth-child(7){
+    margin-bottom: 80px;
 }
 #contact .group-item .input-field textarea{
     height: 290px;
@@ -284,6 +303,10 @@
 #contact .privacy-checkbox{
     padding-top: 60px;
     padding-bottom: 90px;
+}
+#contact .privacy-checkbox .error{
+    text-align: center;
+    margin-top: 30px;
 }
 #contact .privacy-checkbox .mwform-checkbox-field{
     text-align: center;
@@ -535,8 +558,12 @@
     #contact .privacy-content .info p {
         margin-bottom: 23px;
     }
-    #contact .group-item .input-field{
-        padding-bottom: 28px;
+    /*#contact .group-item .input-field{*/
+    /*    padding-bottom: 28px;*/
+    /*}*/
+    #contact .group-item .input-field input{
+        padding-bottom: 25px;
+        height: 61px;
     }
 
     #contact .contact-main .title-confirm .text{
@@ -631,7 +658,8 @@
     }
     #contact .group-item .input-field input {
         font-size: 15px;
-        padding: 0;
+        padding: 0 0 8px;
+        height: 44px;
         letter-spacing: 0;
     }
     #contact .group-item .input-field {
@@ -688,6 +716,7 @@
     }
     #contact .group-item:nth-child(7) .title{
         width: 100%;
+        margin-bottom: 5px;
     }
     #contact .group-item:nth-child(7) .container-input{
         width: 100%;
@@ -844,8 +873,18 @@
         left: 18px;
         width: 6px;
     }
-
-
+    #contact .group-item .container-input.half-item .input-field:nth-child(2) .error{
+        display: none;
+    }
+    #contact .mw_wp_form .error{
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    #contact .group-item .container-input.half-item .input-field:nth-child(1) .error{
+        position: relative;
+        margin-right: -80px;
+        width: auto;
+    }
 
 
 }
