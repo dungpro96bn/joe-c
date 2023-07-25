@@ -119,8 +119,18 @@
             <div class="inner">
                 <div class="promise-content border-animation">
                     <div class="left-content">
-                        <h2 class="heading-block u-inview">
-                            <span class="ttl-en">PROMISE</span>
+                        <h2 class="heading-block">
+                            <span class="ttl-en index-module--kv__title--1oLHB">
+                                <span class="word">
+                                    <span class="char">P</span>
+                                    <span class="char">R</span>
+                                    <span class="char">O</span>
+                                    <span class="char">M</span>
+                                    <span class="char">I</span>
+                                    <span class="char">S</span>
+                                    <span class="char">E</span>
+                                </span>
+                            </span>
                             <span class="ttl-ja">私たちの約束</span>
                         </h2>
                         <p class="sub-ttl u-inview">私たちは３つの約束をします。</p>
@@ -178,8 +188,23 @@
             <div class="inner">
                 <div class="cross-talk-content">
                     <div class="left-content">
-                        <h2 class="heading-block u-inview">
-                            <span class="ttl-en">CROSS <br class="pc-br"/><span class="subTll-sp">TALK</span></span>
+                        <h2 class="heading-block">
+                            <span class="ttl-en index-module--kv__title--1oLHB">
+                                <span class="word">
+                                    <span class="char">C</span>
+                                    <span class="char">R</span>
+                                    <span class="char">O</span>
+                                    <span class="char">S</span>
+                                    <span class="char">S</span>
+                                </span>
+                                <span class="word">
+                                    <span class="char">T</span>
+                                    <span class="char">A</span>
+                                    <span class="char">L</span>
+                                    <span class="char">K</span>
+                                </span>
+                            </span>
+<!--                            <span class="ttl-en">CROSS <br class="pc-br"/><span class="subTll-sp">TALK</span></span>-->
                             <span class="ttl-ja">座談会</span>
                         </h2>
                         <picture style="display: block" class="u-inview">
@@ -299,30 +324,34 @@
                     </div>
                     <div class="right-content">
                         <div class="about-item u-inview">
-                            <picture>
-                                <source srcset="/wp-content/uploads/home_img05_pc.png">
-                                <img class="sizes" src="/wp-content/uploads/home_img05_pc.png" alt="">
-                            </picture>
-                            <div class="heading-item">
-                                <p class="ttl">JOEの事業分野</p>
-                                <p class="text">国境を越えた雇用の創出</p>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30.281" height="57.733" viewBox="0 0 30.281 57.733">
-                                <path id="Path_63962" data-name="Path 63962" d="M1241.366,4586.84l28.16,28.16-28.16,28.16" transform="translate(-1240.658 -4586.133)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-                            </svg>
+                            <a class="link-target" href="/business/">
+                                <picture>
+                                    <source srcset="/wp-content/uploads/home_img05_pc.png">
+                                    <img class="sizes" src="/wp-content/uploads/home_img05_pc.png" alt="">
+                                </picture>
+                                <div class="heading-item">
+                                    <p class="ttl">JOEの事業分野</p>
+                                    <p class="text">国境を越えた雇用の創出</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30.281" height="57.733" viewBox="0 0 30.281 57.733">
+                                    <path id="Path_63962" data-name="Path 63962" d="M1241.366,4586.84l28.16,28.16-28.16,28.16" transform="translate(-1240.658 -4586.133)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+                                </svg>
+                                </a>
                         </div>
                         <div class="about-item u-inview">
-                            <picture>
-                                <source srcset="/wp-content/uploads/home_img06_pc.png">
-                                <img class="sizes" src="/wp-content/uploads/home_img06_pc.png" alt="">
-                            </picture>
-                            <div class="heading-item">
-                                <p class="ttl">JOE協同組合について</p>
-                                <p class="text">働くを通して人と社会を豊かにする<br class="sp-br"/>DMDサプライヤー</p>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30.281" height="57.733" viewBox="0 0 30.281 57.733">
-                                <path id="Path_63962" data-name="Path 63962" d="M1241.366,4586.84l28.16,28.16-28.16,28.16" transform="translate(-1240.658 -4586.133)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-                            </svg>
+                            <a class="link-target" href="/about/">
+                                <picture>
+                                    <source srcset="/wp-content/uploads/home_img06_pc.png">
+                                    <img class="sizes" src="/wp-content/uploads/home_img06_pc.png" alt="">
+                                </picture>
+                                <div class="heading-item">
+                                    <p class="ttl">JOE協同組合について</p>
+                                    <p class="text">働くを通して人と社会を豊かにする<br class="sp-br"/>DMDサプライヤー</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30.281" height="57.733" viewBox="0 0 30.281 57.733">
+                                    <path id="Path_63962" data-name="Path 63962" d="M1241.366,4586.84l28.16,28.16-28.16,28.16" transform="translate(-1240.658 -4586.133)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
