@@ -31,7 +31,7 @@
 
         <div class="about-content page-content">
             <div class="inner">
-                <div class="message-about border-animation">
+                <div class="message-about fadeIn-bg">
                     <div class="info-content">
                         <h2 class="title u-inview">一人でも多くの方へ<br/>豊かな人生の創出を</h2>
                         <div class="textInfo">
@@ -66,7 +66,9 @@
                         <li class="overview-item u-inview">
                             <div class="ttl"><p>事業内容</p></div>
                             <div class="info">
-                                <p class="text">・外国人技能実習生共同受入事業及び外国人技能実習生受入れに係る職業紹介事業<br/>・組合員の福利厚生に関する事業<br/>・組合員のための消耗品・<br class="sp-br"/>新電力等の共同購買</p>
+                                <p class="text">・外国人技能実習生共同受入事業及び外国人技能実習生受入れに係る職業紹介事業</p>
+                                <p class="text">・組合員の福利厚生に関する事業</p>
+                                <p class="text">・組合員のための消耗品・<br class="sp-br"/>新電力等の共同購買</p>
                             </div>
                         </li>
                         <li class="overview-item u-inview">

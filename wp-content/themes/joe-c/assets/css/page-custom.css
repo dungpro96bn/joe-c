@@ -33,12 +33,17 @@
 #about .message-about:after{
     content: "";
     position: absolute;
-    width: 10000px;
+    width: calc(100vw - ((100vw - 1200px) / 2));
     height: 100%;
     background: rgba(255,255,255,.40);
     right: 196px;
     top: 0;
     z-index: -1;
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#about .message-about.is-inview:after{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #about .message-about .info-content{
     width: 59.5%;
@@ -570,6 +575,11 @@
     min-height: 400px;
     object-fit: cover;
     object-position: center;
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#business .banner .image.is-inview img{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #business .banner{
     position: relative;
@@ -591,10 +601,15 @@
     position: absolute;
     background: #466E91;
     mix-blend-mode: multiply;
-    width: 10000px;
+    width: calc(100vw - ((100vw - 1200px) / 2) - 38%);
     height: 100%;
     top: 0;
     right: 0;
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#business .banner .text-info.is-inview ~ .bg-banner{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #business .banner .banner-info{
     position: absolute;
@@ -752,7 +767,7 @@
 }
 #business .support .support-title{
     position: relative;
-    background: #466E91;
+    /*background: #466E91;*/
     z-index: 2;
     width: 65.5%;
     color: #fff;
@@ -765,11 +780,17 @@
 #business .support .support-title:before{
     content: "";
     position: absolute;
-    width: 10000px;
+    width: calc(100vw - ((100vw - 1200px) / 2) - 34.5%);
     height: 100%;
     background: #466E91;
-    right: 100%;
+    right: 0;
     top: 0;
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+    z-index: -1;
+}
+#business .support .support-title.is-inview:before{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #business .support .support-title .number-ttl{
     width: 118px;
@@ -805,8 +826,9 @@
 }
 
 #business .support .support-list{
-    background: rgba(255,255,255,.40);
+    /*background: rgba(255,255,255,.40);*/
     position: relative;
+    z-index: 1;
     margin-top: -85px;
     padding-right: 53px;
     padding-top: 147px;
@@ -818,11 +840,17 @@
 #business .support .support-list:before{
     content: "";
     position: absolute;
-    width: 10000px;
+    width: calc(100vw - ((100vw - 1200px) / 2));
     height: 100%;
     background: rgba(255,255,255,.40);
-    right: 100%;
+    right: 0;
     top: 0;
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+    z-index: -1;
+}
+#business .support .support-list.is-inview:before{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #business .support .support-item{
     display: flex;
@@ -889,12 +917,19 @@
 #business .business-point:after{
     content: "";
     position: absolute;
-    width: 10000px;
     height: 100%;
     background: rgba(255,255,255,.40);
-    right: 22%;
     top: 0;
     z-index: -1;
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#business .business-point.point-01:after{
+    width: 78%;
+    right: 22%;
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+}
+#business .business-point.point-01.is-inview:after{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #business .business-point.point-01 .text-content{
     width: 63.1%;
@@ -1024,10 +1059,13 @@
     margin-bottom: 64px;
 }
 #business .business-point.point-02:after{
-    right: unset;
-    left: 28.5%;
+    width: 0;
+    right: 0;
+    transition: .65s cubic-bezier(.455,.03,.515,.955) .05s;
 }
-
+#business .business-point.point-02.is-inview:after{
+    width: 71.5%;
+}
 
 
 /*Talk*/
@@ -1119,6 +1157,11 @@
 }
 #cross-talk .content .banner img{
     width: 100%;
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#cross-talk .content .banner picture.is-inview img{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #cross-talk .content .banner .text-talk{
     display: flex;
@@ -1144,6 +1187,13 @@
 }
 #cross-talk .content .talk-content .image-content{
     width: 44.7%;
+}
+#cross-talk .content .talk-content .image-content img{
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#cross-talk .content .talk-content .image-content.is-inview img{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #cross-talk .content .talk-content .text-content{
     width: calc(100% - 44.7%);
@@ -1201,6 +1251,13 @@
     padding-right: 50px;
     margin-bottom: 101px;
 }
+#cross-talk .building-relationships .banner img{
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#cross-talk .building-relationships .banner picture.is-inview img{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
 #cross-talk .building-relationships .banner picture{
     display: block;
     max-width: calc(100% - ((100% - 1250px) / 2));
@@ -1219,6 +1276,13 @@
     display: block;
     max-width: calc(100% - ((100% - 1250px) / 2));
     margin: 0 0 0 auto;
+}
+#cross-talk .building-relationships .talk-content .image-content picture img{
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    transition: clip-path .65s cubic-bezier(.455,.03,.515,.955) .05s;
+}
+#cross-talk .building-relationships .talk-content .image-content picture.is-inview img{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
 }
 #cross-talk .building-relationships .talk-content .text-content{
     margin-bottom: 90px;
@@ -1457,6 +1521,10 @@
         font-size: 16px;
         line-height: 32px;
         padding-left: 0px;
+    }
+    #about .message-about:after{
+        width: calc(100% + 30px);
+        right: 18%;
     }
 
 
@@ -1704,6 +1772,13 @@
     #business .business-point .text-description {
         margin-bottom: 30px;
     }
+    #business .banner .bg-banner{
+        width: calc(100% + 30px);
+    }
+    #business .support .support-title:before,
+    #business .support .support-list:before{
+        width: calc(100% + 30px);
+    }
 
 
     /*cross-talk*/
@@ -1842,7 +1917,6 @@
         margin-left: -5px;
     }
     #about .message-about:after {
-        width: calc(100% + 30px);
         height: calc(100% - 127px);
         right: 0;
         top: 127px;
@@ -1874,6 +1948,11 @@
     }
     #about .overview-block .overview-item .info p{
         margin-bottom: 14px;
+    }
+    #about .overview-block .overview-item:nth-child(2) .info p{
+        margin-bottom: 0;
+        padding-left: 10px;
+        text-indent: -13px;
     }
     #about .overview-block .overview-item .info p:last-child{
         margin-bottom: 0;
@@ -2496,6 +2575,17 @@
     #business .bg-02,
     #business .bg-03{
         display: none;
+    }
+    #business .business-point.point-01:after{
+        width: 100%;
+        right: 23px;
+    }
+    #business .business-point.point-02:after{
+        right: unset;
+        left: 0;
+    }
+    #business .business-point.point-02.is-inview:after{
+        width: calc(100% - 23px);
     }
 
 

@@ -70,7 +70,7 @@
             <div class="content">
                 <div class="inner">
                     <div class="banner">
-                        <picture class="u-inview">
+                        <picture class="fadeIn-bg">
                             <source srcset="/wp-content/uploads/talk_pic04_pc.png">
                             <img decoding="async" class="sizes" src="/wp-content/uploads/talk_pic04_pc.png" alt="">
                         </picture>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="talk-content item01">
-                    <div class="image-content u-inview">
+                    <div class="image-content fadeIn-bg">
                         <picture>
                             <source srcset="/wp-content/uploads/talk_pic05_pc.png">
                             <img decoding="async" class="sizes" src="/wp-content/uploads/talk_pic05_pc.png" alt="">
@@ -163,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="image-content u-inview">
+                    <div class="image-content fadeIn-bg">
                         <picture>
                             <source srcset="/wp-content/uploads/talk_pic06_pc.png">
                             <img decoding="async" class="sizes" src="/wp-content/uploads/talk_pic06_pc.png" alt="">
@@ -174,8 +174,8 @@
 
             <div class="building-relationships">
                 <div class="inner">
-                    <div class="banner u-inview">
-                        <picture>
+                    <div class="banner">
+                        <picture class="fadeIn-bg">
                             <source srcset="/wp-content/uploads/talk_pic07_pc.jpg">
                             <img decoding="async" class="sizes" src="/wp-content/uploads/talk_pic07_pc.jpg" alt="">
                         </picture>
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                         <div class="image-content">
-                            <picture class="u-inview">
+                            <picture class="fadeIn-bg">
                                 <source media="(max-width: 767px)" srcset="/wp-content/uploads/talk_pic08_sp.jpg">
                                 <source media="(min-width: 768px)" srcset="/wp-content/uploads/talk_pic08_pc.jpg">
                                 <img decoding="async" class="sizes" src="/wp-content/uploads/talk_pic08_pc.jpg" alt="">

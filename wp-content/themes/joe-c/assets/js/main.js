@@ -61,27 +61,28 @@ jQuery(function ($) {
 
 
     //border animation
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            $('.u-inview, .u-inview-left').each(function () {
+    setTimeout((function() {
+            $(window).scroll(function () {
+                $('.u-inview, .u-inview-left, .fadeIn-bg').each(function () {
+                    var ptop = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height() - 200;
+                    if (scroll > ptop - windowHeight) {
+                        $(this).addClass('is-inview');
+                    }
+                });
+            });
+
+            $('.u-inview, .u-inview-left, .fadeIn-bg').each(function () {
                 var ptop = $(this).offset().top;
-                var scroll = $(window).scrollTop();
+                var firstView = $(window).scrollTop();
                 var windowHeight = $(window).height() - 200;
-                if (scroll > ptop - windowHeight) {
+                if (firstView > ptop - windowHeight) {
                     $(this).addClass('is-inview');
                 }
             });
-        });
-
-        $('.u-inview, .u-inview-left').each(function () {
-            var ptop = $(this).offset().top;
-            var firstView = $(window).scrollTop();
-            var windowHeight = $(window).height() - 200;
-            if (firstView > ptop - windowHeight) {
-                $(this).addClass('is-inview');
-            }
-        });
-    });
+        }
+    ), 200);
 
 
     //scroll

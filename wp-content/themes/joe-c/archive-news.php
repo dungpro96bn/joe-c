@@ -28,7 +28,7 @@ global $post;
 
     <div class="news-container">
         <div class="inner">
-            <div class="list-news">
+            <div class="list-news fadeIn-bg">
                 <?php
                 //$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
                 $args = array(

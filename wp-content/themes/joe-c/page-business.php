@@ -99,13 +99,15 @@
                     </div>
                     <div class="banner-info">
                         <div class="inner">
-                            <div class="info-inner">
-                                <div class="text-info u-inview">
-                                    <p class="number en">01</p>
-                                    <p class="title">JOEの技能実習事業</p>
-                                    <p class="text">外国人技能実習制度とは、国際社会と調和ある発展を見込み、日本で培われた技能や技術等を開発途上地域へ移転を図り、当該地域の経済発展を担う『人づくり』に寄与することを目的として創設された制度です。</p>
+                            <div class="">
+                                <div class="info-inner">
+                                    <div class="text-info u-inview">
+                                        <p class="number en">01</p>
+                                        <p class="title">JOEの技能実習事業</p>
+                                        <p class="text">外国人技能実習制度とは、国際社会と調和ある発展を見込み、日本で培われた技能や技術等を開発途上地域へ移転を図り、当該地域の経済発展を担う『人づくり』に寄与することを目的として創設された制度です。</p>
+                                    </div>
+                                    <div class="bg-banner"></div>
                                 </div>
-                                <div class="bg-banner"></div>
                             </div>
                         </div>
                     </div>
@@ -205,7 +207,7 @@
                                     <p class="text">日本語の自主学習ツール、ならびに日本で仕事をするうえで必要な<br/>基本的資質を向上させるプログラムを提供します。</p>
                                 </div>
                             </div>
-                            <ul class="support-list">
+                            <ul class="support-list fadeIn-bg">
                                 <li class="item-sp u-inview"><p>日本語の自主学習ツール、ならびに日本で仕事をするうえで必要な基本的資質を向上させるプログラムを提供します。</p></li>
                                 <li class="support-item u-inview">
                                     <picture class="icon">
@@ -249,7 +251,7 @@
                                     <p class="text">日本語の自主学習ツール、ならびに日本で仕事をするうえで必要な<br/>基本的資質を向上させるプログラムを提供します。</p>
                                 </div>
                             </div>
-                            <ul class="support-list">
+                            <ul class="support-list fadeIn-bg">
                                 <li class="item-sp u-inview"><p>日本語の自主学習ツール、ならびに日本で仕事をするうえで必要な基本的資質を向上させるプログラムを提供します。</p></li>
                                 <li class="support-item u-inview">
                                     <picture class="icon">
@@ -339,7 +341,7 @@
                 </div>
 
                 <div class="point-list">
-                    <div class="business-point point-01">
+                    <div class="business-point point-01 fadeIn-bg">
                         <div class="text-content">
                             <div class="text-inner">
                                 <div class="point-title u-inview">
@@ -415,7 +417,7 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="business-point point-02">
+                    <div class="business-point point-02 fadeIn-bg">
                         <div class="image-content u-inview">
                             <picture>
                                 <source media="(max-width: 767px)" srcset="/wp-content/uploads/business_pic10_sp.png">
