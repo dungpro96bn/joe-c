@@ -12,7 +12,6 @@
 
         <div class="bg-02">
             <picture>
-                <source media="(max-width: 767px)" srcset="/wp-content/uploads/home_bg03_sp.png">
                 <source media="(min-width: 768px)" srcset="/wp-content/uploads/home_bg03_pc.png">
                 <img decoding="async" class="sizes" src="/wp-content/uploads/home_bg03_pc.png" alt="">
             </picture>
@@ -20,7 +19,6 @@
 
         <div class="bg-03">
             <picture>
-                <source media="(max-width: 767px)" srcset="/wp-content/uploads/business_bg03_sp.png">
                 <source media="(min-width: 768px)" srcset="/wp-content/uploads/business_bg03_pc.png">
                 <img decoding="async" class="sizes" src="/wp-content/uploads/business_bg03_pc.png" alt="">
             </picture>
@@ -401,7 +399,7 @@
                                                     <source srcset="/wp-content/uploads/business_icon08_pc.png">
                                                     <img decoding="async" class="sizes" src="/wp-content/uploads/business_icon08_pc.png" alt="">
                                                 </picture>
-                                                <div class="sub-text">面倒な手続きもサポートで安心</div>
+                                                <div class="sub-text">面倒な手続きも<br class="sp-br"/>サポートで安心</div>
                                             </div>
                                             <p class="text">経験豊富な電気代削減コンサルタントが<br/>しっかりサポートします。</p>
                                         </div>

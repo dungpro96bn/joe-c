@@ -54,7 +54,7 @@ function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcr
 	global $post;
 	global $homeName;
 	if ($homeName == '') {
-		$homeName = 'TOP　>';
+		$homeName = 'TOP';
 	}
 	$str ='';
     if(!is_home()&&!is_admin()){
@@ -79,7 +79,7 @@ function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcr
             if($post -> post_parent != 0 ){
                 $ancestors = array_reverse(get_post_ancestors( $post->ID ));
                 foreach($ancestors as $ancestor){
-                    $str.='<li><a href="'. get_permalink($ancestor).'">'. get_the_title($ancestor) .'</a></li>';
+                    $str.='<li>>　<a href="'. get_permalink($ancestor).'">'. get_the_title($ancestor) .'</a></li>';
                 }
             }
             $str.= '<li>>　'. $post -> post_title .'</li>';
@@ -105,7 +105,7 @@ function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcr
         } elseif(is_404()){
             $str.='<li>ページがみつかりません。</li>';
         } else{
-            $str.='<li>'. wp_title('', '') .'</li>';
+            $str.='<li>>　'. wp_title('', '') .'</li>';
         }
         $str.='</ol>';
         $str.='</div>';
