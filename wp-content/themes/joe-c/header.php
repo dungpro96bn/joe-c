@@ -39,6 +39,7 @@
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), '2.2.4');
     wp_head();
     ?>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/ScrollTrigger.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/gsap.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/app.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>

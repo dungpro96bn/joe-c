@@ -2,17 +2,28 @@ jQuery(function ($) {
 
     //Heading animation homepage
     jQuery(window).load(function() {
-        gsap.to(".char", {
-            opacity: 1,
-            filter: "blur(0px)",
-            duration: .7,
-            ease: "power2.inOut",
-            stagger: {
-                each: 0.1,
-                from: "random",
-            }
+        gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.batch('.word', {
+            onEnter: batch => {
+                batch.forEach((card, index) =>
+                    gsap.to(card.children,{
+                        opacity: 1,
+                        filter: "blur(0px)",
+                        duration: .7,
+                        ease: "power2.inOut",
+                        stagger: {
+                            each: 0.1,
+                            from: "random",
+                        }
+                    })
+                )
+            },
+            once: true
         });
+    });
 
+
+    $(document).ready(function () {
         $(window).scroll(function () {
             $('.border-animation').each(function () {
                 var ptop = $(this).offset().top;
@@ -31,7 +42,6 @@ jQuery(function ($) {
                 $(this).addClass('active');
             }
         });
-
     });
 
 
@@ -81,8 +91,7 @@ jQuery(function ($) {
                     $(this).addClass('is-inview');
                 }
             });
-        }
-    ), 200);
+        }), 100);
 
 
     //scroll
@@ -132,6 +141,15 @@ jQuery(function ($) {
         $("html, body").animate({ scrollTop: 0 }, 200);
         $("body").toggleClass("is-active");
     });
+
+    setTimeout(function(){
+        $('.input-field .error').each(function () {
+            $(this).parents(".input-field").addClass('field-error');
+        });
+        // $('#contact-form .box-policy .error').each(function () {
+        //     $(this).parents(".box-policy").find(".privacy").addClass('policy-error');
+        // });
+    },100);
 
 
 });

@@ -1,17 +1,19 @@
 
-/*#homepage{*/
-/*    background-image:*/
-/*            linear-gradient(90deg, hsla(0, 0%, 100%, 0) calc(50% - 60rem), hsla(0, 0%, 100%, .15) calc(50% - 60rem), hsla(0, 0%, 100%, .15) calc(50% - 60rem + 1px), hsla(0, 0%, 100%, 0) calc(50% - 60rem + 1px), hsla(0, 0%, 100%, 0) calc(50% - 30rem), hsla(0, 0%, 100%, .15) calc(50% - 30rem), hsla(0, 0%, 100%, .15) calc(50% - 30rem + 1px), hsla(0, 0%, 100%, 0) calc(50% - 30rem + 1px)),*/
-/*            linear-gradient(90deg, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15) calc(50% + 1px), hsla(0, 0%, 100%, 0) calc(50% + 1px), hsla(0, 0%, 100%, 0) calc(50% + 30rem), hsla(0, 0%, 100%, .15) calc(50% + 30rem), hsla(0, 0%, 100%, .15) calc(50% + 30rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 30rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 60rem), hsla(0, 0%, 100%, .15) calc(50% + 60rem), hsla(0, 0%, 100%, .15) calc(50% + 60rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 60rem + 1px)),*/
-/*            linear-gradient(90deg, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15) calc(50% + 1px), hsla(0, 0%, 100%, 0) calc(50% + 1px), hsla(0, 0%, 100%, 0) calc(50% + 30rem), hsla(0, 0%, 100%, .15) calc(50% + 30rem), hsla(0, 0%, 100%, .15) calc(50% + 30rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 30rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 60rem), hsla(0, 0%, 100%, .15) calc(50% + 60rem), hsla(0, 0%, 100%, .15) calc(50% + 60rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 60rem + 1px)),*/
-/*            linear-gradient(90deg, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15) calc(50% + 1px), hsla(0, 0%, 100%, 0) calc(50% + 1px), hsla(0, 0%, 100%, 0) calc(50% + 30rem), hsla(0, 0%, 100%, .15) calc(50% + 30rem), hsla(0, 0%, 100%, .15) calc(50% + 30rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 30rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 60rem), hsla(0, 0%, 100%, .15) calc(50% + 60rem), hsla(0, 0%, 100%, .15) calc(50% + 60rem + 1px), hsla(0, 0%, 100%, 0) calc(50% + 60rem + 1px)),*/
-/*            linear-gradient(0deg, #fff 8rem, hsla(0, 0%, 100%, 0) 8.1rem),*/
-/*    linear-gradient(90deg, #00aef7, #2b70e2);*/
-/*}*/
+#homepage:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/wp-content/uploads/bg_border.png");
+    background-position: center;
+    z-index: 2;
+}
 
 #homepage{
     overflow: hidden;
-    /*background: linear-gradient(180deg, rgba(221,221,221,0) 0%, rgba(230,230,230,1) 20%, rgba(230,230,230,1) 100%);*/
+    position: relative;
 }
 #homepage .home-inner{
     position: relative;
@@ -54,7 +56,7 @@
     line-height: 30px;
     letter-spacing: 1.5px;
 }
-#homepage .bg-fix{
+.home .bg-fix{
     position: fixed;
     top: 185px;
     left: 0;
@@ -63,7 +65,7 @@
     z-index: 1;
     pointer-events: none;
 }
-#homepage .bg-fix img{
+.home .bg-fix img{
     width: 100%;
 }
 
@@ -227,16 +229,6 @@
     background: linear-gradient(180deg, rgba(221,221,221,0) 0%, rgba(230,230,230,1) 90%, rgba(230,230,230,1) 100%);
     z-index: -1;
     pointer-events: none;
-}
-#homepage:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 60%;
-
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
 }
 .message-block h2.heading-block{
     margin-bottom: 39px;
@@ -669,10 +661,23 @@
 .about-block{
     padding-top: 138px;
     padding-bottom: 76px;
+    position: relative;
+}
+.about-block:after{
+    content: "";
+    position: absolute;
+    background: rgba(230,230,230,.70);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /*mix-blend-mode: multiply;*/
+    z-index: 2;
+    pointer-events: none;
 }
 .about-block .inner{
     position: relative;
-    z-index: 2;
+    z-index: 5;
 }
 .about-block .bg03{
     position: absolute;
@@ -1115,7 +1120,7 @@
 
 
 
-#homepage .bg-fix{
+.home .bg-fix{
     display: none;
 }
 #homepage .right-content {

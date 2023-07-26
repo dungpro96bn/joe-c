@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
-<div id="homepage">
+<div class="bg-fix">
+    <picture>
+        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg 2x">
+        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg" alt="">
+    </picture>
+</div>
 
-    <div class="bg-fix">
-        <picture>
-            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg 2x">
-            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg" alt="">
-        </picture>
-    </div>
+<div id="homepage">
 
     <div class="home-inner">
 
@@ -204,7 +204,6 @@
                                     <span class="char">K</span>
                                 </span>
                             </span>
-<!--                            <span class="ttl-en">CROSS <br class="pc-br"/><span class="subTll-sp">TALK</span></span>-->
                             <span class="ttl-ja">座談会</span>
                         </h2>
                         <picture style="display: block" class="u-inview">
