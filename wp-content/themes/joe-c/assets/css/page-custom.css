@@ -108,6 +108,7 @@
     justify-content: center;
     letter-spacing: 1.4px;
     padding-left: 4px;
+    font-weight: 500;
 }
 #about .overview-block .overview-item .info{
     width: calc(100% - 250px);
