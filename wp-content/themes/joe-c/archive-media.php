@@ -68,12 +68,15 @@ global $post;
                                             </div>
                                             <div class="author">
                                                 <div class="author-img">
-                                                    <?php echo get_avatar( get_the_author_meta( 'ID' )); ?>
+                                                    <?php
+                                                    $image = get_field('w-img');
+                                                    if( !empty( $image ) ): ?>
+                                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                    <?php endif; ?>
                                                 </div>
                                                 <div class="author-info">
-                                                    <p class="author-name"><?php echo get_the_author(); ?></p>
-                                                    <p class="author-position"><?php $author_id = get_the_author_meta( 'ID' );
-                                                        echo get_field('position', 'user_'. $author_id ); ?></p>
+                                                    <p class="author-name"><?php echo get_field('w-name'); ?></p>
+                                                    <p class="author-position"><?php echo get_field('w-pos'); ?></p>
                                                 </div>
                                             </div>
                                         </div>

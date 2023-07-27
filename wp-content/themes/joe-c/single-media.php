@@ -38,12 +38,15 @@ global $current_user;
                         <div class="author-media-category u-inview">
                             <div class="author">
                                 <div class="author-img">
-                                    <?php echo get_avatar( get_the_author_meta( 'ID' )); ?>
+                                    <?php
+                                    $image = get_field('w-img');
+                                    if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
                                 </div>
                                 <div class="author-info">
-                                    <p class="author-name"><?php echo get_the_author(); ?></p>
-                                    <p class="author-position"><?php $author_id = get_the_author_meta( 'ID' );
-                                        echo get_field('position', 'user_'. $author_id ); ?></p>
+                                    <p class="author-name"><?php echo get_field('w-name'); ?></p>
+                                    <p class="author-position"><?php echo get_field('w-pos'); ?></p>
                                 </div>
                             </div>
                             <div class="cat-list">
@@ -76,14 +79,15 @@ global $current_user;
                             <p class="ttl">この記事のライター</p>
                             <div class="author">
                                 <div class="author-img">
-                                    <?php echo get_avatar( get_the_author_meta( 'ID' )); ?>
+                                    <?php
+                                    $image = get_field('w-img');
+                                    if( !empty( $image ) ): ?>
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    <?php endif; ?>
                                 </div>
                                 <div class="author-info">
-                                    <?php $author_id = get_the_author_meta( 'ID' );
-                                    $position = get_field('position', 'user_'. $author_id );
-                                    $message = get_field('message', 'user_'. $author_id ); ?>
-                                    <p class="author-name"><span class="t1"><?php echo get_the_author(); ?></span><span class="t2"><?php echo $position; ?></span></p>
-                                    <p class="author-position"><?php echo $message; ?></p>
+                                    <p class="author-name"><span class="t1"><?php echo get_field('w-name'); ?></span><span class="t2"><?php echo get_field('w-pos'); ?></span></p>
+                                    <p class="author-position"><?php echo get_field('w-desc'); ?></p>
                                 </div>
                             </div>
                         </div>
