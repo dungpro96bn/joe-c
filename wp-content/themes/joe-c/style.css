@@ -533,7 +533,6 @@ body{
     margin: auto;
     padding: 0 20px;
     display: flex;
-    flex-wrap: wrap;
 }
 #breadcrumb ol li a{
     color: #8D8D8D;
@@ -812,6 +811,9 @@ body{
         width: 35px;
         height: 35px;
     }
+    #footer .logo-footer{
+        width: 40px;
+    }
     #footer .logo-footer img {
         max-width: 37px;
     }
@@ -826,7 +828,7 @@ body{
         line-height: 20px;
         padding-right: 0;
         letter-spacing: 1.2px;
-        width: calc(100% - 37px);
+        width: calc(100% - 40px);
     }
 
 
@@ -845,6 +847,19 @@ body{
         height: auto;
     }
 
+    #breadcrumb ol li{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    #breadcrumb{
+        height: auto;
+        padding: 15px 0;
+    }
+    .single #breadcrumb ol li:nth-child(n+2) {
+        padding-left: 15px;
+        margin-left: -38px;
+        text-indent: 38px;
+    }
 
 
 
