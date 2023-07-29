@@ -172,6 +172,9 @@ select {
     background-color: transparent;
     font-size: 16px;
     vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 input,
