@@ -12,8 +12,8 @@
 
         <div class="header-entry">
             <div class="inner">
-                <h1 class="heading u-inview">
-                    <span class="ttl-en border-animation index-module--kv__title--1oLHB">
+                <h1 class="heading">
+                    <span class="ttl-en border-animation delay-1 index-module--kv__title--1oLHB">
                         <span class="word">
                             <span class="char">A</span>
                             <span class="char">B</span>
@@ -24,7 +24,7 @@
                             <span class="char">S</span>
                         </span>
                     </span>
-                    <span class="ttl-ja">JOEについて</span>
+                    <span class="ttl-ja fadeIn-delay delay-2">JOEについて</span>
                 </h1>
             </div>
         </div>

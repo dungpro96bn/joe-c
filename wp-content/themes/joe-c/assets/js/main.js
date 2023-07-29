@@ -20,29 +20,30 @@ jQuery(function ($) {
             },
             once: true
         });
-    });
 
-
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            $('.border-animation').each(function () {
+        // setTimeout((function() {
+            $(window).scroll(function () {
+                $('.fadeIn-delay, .border-animation').each(function () {
+                    var ptop = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height() - 200;
+                    if (scroll > ptop - windowHeight) {
+                        $(this).addClass('is-inview active');
+                    }
+                });
+            });
+            $('.fadeIn-delay, .border-animation').each(function () {
                 var ptop = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height() - 150;
-                if (scroll > ptop - windowHeight) {
-                    $(this).addClass('active');
+                var firstView = $(window).scrollTop();
+                var windowHeight = $(window).height() - 200;
+                if (firstView > ptop - windowHeight) {
+                    $(this).addClass('is-inview active');
                 }
             });
-        });
-        $('.border-animation').each(function () {
-            var ptop = $(this).offset().top;
-            var firstView = $(window).scrollTop();
-            var windowHeight = $(window).height() - 150;
-            if (firstView > ptop - windowHeight) {
-                $(this).addClass('active');
-            }
-        });
+        // }), 500);
+
     });
+
 
 
     //Slider homepage

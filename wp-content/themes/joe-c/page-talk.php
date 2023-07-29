@@ -26,7 +26,7 @@
                             <span class="char">K</span>
                         </span>
                     </span>
-                    <span class="ttl-ja">座談会</span>
+                    <span class="ttl-ja fadeIn-delay delay-2">座談会</span>
                 </h1>
             </div>
         </div>

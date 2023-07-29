@@ -21,7 +21,7 @@ global $post;
                         <span class="char">S</span>
                     </span>
                 </span>
-                <span class="ttl-ja">お知らせ</span>
+                <span class="ttl-ja fadeIn-delay delay-2">お知らせ</span>
             </h1>
         </div>
     </div>

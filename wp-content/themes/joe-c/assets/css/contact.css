@@ -24,7 +24,7 @@
     display: block;
     font-size: 122px;
     line-height: 130px;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
     letter-spacing: 0.4px;
     border-bottom: 1px solid #ACACAC;
@@ -35,7 +35,7 @@
     display: block;
     font-size: 26px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 500;
     padding-left: 3px;
 }
 
@@ -78,7 +78,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #7E7E7E;
-    font-weight: 500;
+    font-weight: 400;
     position: absolute;
     white-space: nowrap;
     top: -23px;
@@ -135,7 +135,7 @@
 #contact .group-item .title label{
     font-size: 20px;
     line-height: 36px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1.2px;
 }
 #contact .group-item .container-input{
@@ -148,6 +148,7 @@
     padding: 0 26px 35px;
     letter-spacing: 1.6px;
     border-bottom: 1px solid #C4C4C4;
+    border-radius: 0;
 }
 #contact .group-item .input-field{
     /*border-bottom: 1px solid #C4C4C4;*/
@@ -203,7 +204,7 @@
     padding-left: 67px;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1.6px;
     margin-bottom: 28px;
 }
@@ -260,7 +261,7 @@
     font-size: 20px;
     line-height: 36px;
     padding: 29px 26px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1.6px;
 }
 #contact .group-item .input-field textarea::-webkit-input-placeholder {

@@ -23,7 +23,7 @@ global $current_user;
                             <span class="char">A</span>
                         </span>
                     </span>
-                    <span class="ttl-ja">みる、よむ、JOE</span>
+                    <span class="ttl-ja fadeIn-delay delay-2">みる、よむ、JOE</span>
                 </h1>
             </div>
         </div>

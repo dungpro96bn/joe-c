@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="bg-fix">
+<div class="bg-fix bg-pc">
     <picture>
         <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg 2x">
         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg" alt="">
@@ -19,6 +19,12 @@
                 </picture>
             </div>
             <div class="inner">
+                <div class="bg-fix bg-sp">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="/wp-content/uploads/bg_contact_sp.png">
+                        <img class="sizes" src="/wp-content/uploads/bg_contact_sp.png" alt="">
+                    </picture>
+                </div>
                 <div class="right-content index-module--kv__header--JH5j0">
                     <h1 class="heading-block en index-module--kv__title--1oLHB">
                         <span>
@@ -47,7 +53,7 @@
                             </div>
                         </span>
                     </h1>
-                    <p class="t1 u-inview">学びと支援を、世界中へ。</p>
+                    <p class="t1 fadeIn-delay delay-1">学びと支援を、世界中へ。</p>
                     <div class="mainImg">
                         <picture>
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_mainImg_sp.jpg">
@@ -85,7 +91,7 @@
                     </div>
                 </div>
                 <div class="scroll-page">
-                    <a class="scroll" href="#message">
+                    <a class="scroll fadeIn-delay delay-1" href="#message">
                         <div class="text en"><span>SCROLL</span></div>
                     </a>
                 </div>
@@ -195,7 +201,7 @@
                                     <span class="char">R</span>
                                     <span class="char">O</span>
                                     <span class="char">S</span>
-                                    <span class="char">S</span>
+                                    <span class="char">S&nbsp;</span>
                                 </span>
                                 <span class="word">
                                     <span class="char">T</span>

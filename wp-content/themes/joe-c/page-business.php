@@ -39,7 +39,7 @@
                             <span class="char">S</span>
                         </span>
                     </span>
-                    <span class="ttl-ja">事業紹介</span>
+                    <span class="ttl-ja fadeIn-delay delay-2">事業紹介</span>
                 </h1>
             </div>
         </div>
@@ -99,7 +99,7 @@
                         <div class="inner">
                             <div class="">
                                 <div class="info-inner">
-                                    <div class="text-info u-inview">
+                                    <div class="text-info u-inview delay-1">
                                         <p class="number en">01</p>
                                         <p class="title">JOEの技能実習事業</p>
                                         <p class="text">外国人技能実習制度とは、国際社会と調和ある発展を見込み、日本で培われた技能や技術等を開発途上地域へ移転を図り、当該地域の経済発展を担う『人づくり』に寄与することを目的として創設された制度です。</p>
@@ -199,8 +199,8 @@
                         <p class="text-description u-inview">JOE協同組合では、様々なサポートプランをご用意しております。<br/>監理団体組合が本来やるべき項目のほか、多彩なサポートをアレンジ。<br/>提携会社によるリモートコンテンツの提供も豊富で、企業様のご要望をしっかりバックアップいたします。</p>
                         <div class="support-content">
                             <div class="support-title u-inview">
-                                <p class="number-ttl en">01</p>
-                                <div class="info">
+                                <p class="number-ttl en u-inview delay-05">01</p>
+                                <div class="info u-inview delay-05">
                                     <p class="ttl">日本語能力・生産性をレベルアップ</p>
                                     <p class="text">日本語の自主学習ツール、ならびに日本で仕事をするうえで必要な<br/>基本的資質を向上させるプログラムを提供します。</p>
                                 </div>
@@ -243,8 +243,8 @@
                         </div>
                         <div class="support-content">
                             <div class="support-title support-title-02 u-inview">
-                                <p class="number-ttl en">02</p>
-                                <div class="info">
+                                <p class="number-ttl en u-inview delay-05">02</p>
+                                <div class="info u-inview delay-05">
                                     <p class="ttl">その他、幅広くサポートいたします</p>
                                     <p class="text">日本語の自主学習ツール、ならびに日本で仕事をするうえで必要な<br/>基本的資質を向上させるプログラムを提供します。</p>
                                 </div>
@@ -317,7 +317,7 @@
                     <div class="banner-info">
                         <div class="inner">
                             <div class="info-inner">
-                                <div class="text-info u-inview">
+                                <div class="text-info u-inview delay-1">
                                     <p class="number en">02</p>
                                     <p class="title">共同購買事業</p>
                                     <p class="text">組合員様同士が互いに協力し、相互扶助の精神に基づいて、経営の合理化や経済的地位の向上・改善を図るための事業を行います。その他、組合員様の事業に関する経営および技術の向上または知識を深めるための教育や情報の提供なども行います。</p>

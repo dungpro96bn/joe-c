@@ -12,16 +12,16 @@ endif;
 endif;
 ?>
 
-<div id="back-top">
-    <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" width="29.35" height="16.089" viewBox="0 0 29.35 16.089">
-            <path id="Path_63987" data-name="Path 63987" d="M1241.366,4586.841l13.968,13.968-13.968,13.968" transform="translate(-4586.134 1256.748) rotate(-90)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-        </svg>
-        <p class="en">TOP</p>
-    </a>
-</div>
 
 <footer id="footer" class="footer">
+    <div id="back-top">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29.35" height="16.089" viewBox="0 0 29.35 16.089">
+                <path id="Path_63987" data-name="Path 63987" d="M1241.366,4586.841l13.968,13.968-13.968,13.968" transform="translate(-4586.134 1256.748) rotate(-90)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+            </svg>
+            <p class="en">TOP</p>
+        </a>
+    </div>
     <div class="footer-top">
         <div class="contact-banner">
             <div class="inner">

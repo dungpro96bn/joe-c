@@ -8,6 +8,7 @@
     right: 0;
     pointer-events: none;
     width: 1800px;
+    opacity: .40;
 }
 .page-main .page-content{
     position: relative;
@@ -56,7 +57,7 @@
 #about .message-about .info-content .title{
     font-size: 54px;
     line-height: 76px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 57px;
 }
 #about .message-about .info-content .textInfo{
@@ -65,7 +66,7 @@
 #about .message-about .info-content .textInfo p{
     font-size: 20px;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 40px;
     letter-spacing: 0.8px;
 }
@@ -76,7 +77,7 @@
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1.6px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -86,7 +87,7 @@
 #about .overview-block .title{
     font-size: 32px;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 21px;
 }
@@ -108,7 +109,7 @@
     justify-content: center;
     letter-spacing: 1.4px;
     padding-left: 4px;
-    font-weight: 500;
+    font-weight: 400;
 }
 #about .overview-block .overview-item .info{
     width: calc(100% - 250px);
@@ -179,7 +180,7 @@
 #media .media-item .ttl{
     font-size: 23px;
     line-height: 34px;
-    font-weight: 500;
+    font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -321,7 +322,7 @@
 #single-media .media-header .title{
     font-size: 34px;
     line-height: 50px;
-    font-weight: bold;
+    font-weight: 500;
     border-bottom: 1px solid #ACACAC;
     padding-bottom: 26px;
     margin-bottom: 18px;
@@ -395,7 +396,7 @@
 #single-media .post-content h2{
     font-size: 27px;
     line-height: 46px;
-    font-weight: bold;
+    font-weight: 500;
     padding: 26px 0 23px;
 }
 #single-media .author-article .author-inner{
@@ -418,7 +419,7 @@
 #single-media .author-article .ttl{
     font-size: 24px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 22px;
 }
 #single-media .author-article .author{
@@ -441,7 +442,7 @@
 #single-media .author-article .author-info .t1{
     font-size: 22px;
     line-height: 23px;
-    font-weight: 500;
+    font-weight: 400;
 }
 #single-media .author-article .author-info .t2{
     font-size: 18px;
@@ -538,7 +539,7 @@
 #business .business-tabs .business-tab .text{
     font-size: 36px;
     line-height: 52px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 34px;
 }
@@ -565,7 +566,7 @@
 #business .description .text{
     font-size: 20px;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #business .business-content{
@@ -631,7 +632,7 @@
 #business .banner .banner-info .title{
     font-size: 60px;
     line-height: 66px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 3.6px;
     padding-left: 5px;
     margin-bottom: 30px;
@@ -639,7 +640,7 @@
 #business .banner .banner-info .text{
     font-size: 20px;
     line-height: 2;
-    font-weight: 500;
+    font-weight: 400;
 }
 #business .banner .banner-info .text-info{
     position: relative;
@@ -653,14 +654,14 @@
     font-size: 36px;
     line-height: 40px;
     color: #466E91;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
 #business .heading-block .ttl-ja{
     font-size: 50px;
     line-height: 66px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #business .flow .heading-block{
@@ -705,7 +706,7 @@
     font-size: 30px;
     line-height: 44px;
     color: #466E91;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 #business .flow-item .flow-info .ttl .number-sp{
@@ -762,7 +763,7 @@
 #business .support .text-description{
     font-size: 20px;
     line-height: 2;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 5px;
     margin-bottom: 61px;
 }
@@ -818,7 +819,7 @@
 #business .support .support-title .ttl{
     font-size: 30px;
     line-height: 44px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 13px;
 }
 #business .support .support-title .text{
@@ -876,7 +877,7 @@
     font-size: 26px;
     line-height: 37px;
     color: #466E91;
-    font-weight: 500;
+    font-weight: 400;
     border-bottom: 1px solid #83ADD1;
     padding-bottom: 11px;
     margin-bottom: 16px;
@@ -970,7 +971,7 @@
     width: calc(100% - 100px);
     font-size: 42px;
     line-height: 66px;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 27px;
 }
 #business .business-point .point-title .ttl-en .t1{
@@ -988,7 +989,7 @@
 #business .business-point .text-description .text{
     font-size: 20px;
     line-height: 2;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 40px;
 }
 #business .business-point .text-description .text:last-child{
@@ -1019,7 +1020,7 @@
     font-size: 26px;
     line-height: 36px;
     color: #466E91;
-    font-weight: 500;
+    font-weight: 400;
     border-bottom: 1px solid #83ADD1;
     padding-left: 2px;
     padding-bottom: 8px;
@@ -1083,7 +1084,7 @@
 #cross-talk h3.heading-block{
     font-size: 42px;
     line-height: 58px;
-    font-weight: bold;
+    font-weight: 500;
     position: relative;
     padding-top: 35px;
 }
@@ -1103,7 +1104,7 @@
 #cross-talk .future-block .heading-block{
     font-size: 50px;
     line-height: 66px;
-    font-weight: bold;
+    font-weight: 500;
     position: relative;
     margin-left: -40px;
     margin-bottom: 31px;
@@ -1111,7 +1112,7 @@
 #cross-talk .future-block .text-description{
     font-size: 20px;
     line-height: 2;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 36px;
 }
 #cross-talk .future-block .talk-list{
@@ -1133,14 +1134,14 @@
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.8px;
     margin-bottom: 5px;
 }
 #cross-talk .future-block .talk-item .name{
     font-size: 30px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 28px;
@@ -1172,7 +1173,7 @@
     width: 69px;
     font-size: 18px;
     line-height: 34px;
-    font-weight: 500;
+    font-weight: 400;
 }
 #cross-talk .content .banner .text-talk .text{
     width: calc(100% - 69px);
@@ -1212,7 +1213,7 @@
     width: 100px;
     font-size: 18px;
     line-height: 34px;
-    font-weight: 500;
+    font-weight: 400;
 }
 #cross-talk .talk-content .talk-info .text-talk .text{
     width: calc(100% - 100px);
@@ -1291,7 +1292,7 @@
 #cross-talk .building-relationships .talk-content .description-bottom{
     font-size: 20px;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     padding-top: 86px;
     padding-bottom: 88px;
@@ -1490,13 +1491,13 @@
     #about .message-about .info-content .title {
         font-size: 40px;
         line-height: 56px;
-        font-weight: bold;
+        font-weight: 500;
         margin-bottom: 30px;
     }
     #about .message-about .info-content .textInfo p {
         font-size: 16px;
         line-height: 2;
-        font-weight: 500;
+        font-weight: 400;
         margin-bottom: 32px;
         letter-spacing: 0.8px;
     }
@@ -1504,7 +1505,7 @@
         font-size: 16px;
         line-height: 30px;
         letter-spacing: 1.6px;
-        font-weight: 500;
+        font-weight: 400;
         margin-bottom: 10px;
     }
     #about .message-about .sign svg{
@@ -1894,7 +1895,7 @@
     #about .message-about .info-content .title {
         font-size: 22px;
         line-height: 30px;
-        font-weight: bold;
+        font-weight: 500;
         margin-bottom: 18px;
     }
     #about .message-about .info-content .textInfo p {
@@ -1996,7 +1997,7 @@
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 25px;
-        font-weight: bold;
+        font-weight: 500;
     }
     #media .media-item .cat-list p {
         font-size: 12px;
@@ -2067,7 +2068,7 @@
     #single-media .media-header .title {
         font-size: 18px;
         line-height: 20px;
-        font-weight: bold;
+        font-weight: 500;
         border-bottom: 1px solid #ACACAC;
         padding-bottom: 10px;
         margin-bottom: 15px;
