@@ -500,12 +500,20 @@
 #business{
     padding-bottom: 90px;
 }
+#business .flow{
+    position: relative;
+}
 #business .bg-02{
     position: absolute;
-    top: 21.08%;
+    top: -5.1%;
     right: -140px;
     transform: translateY(-50%);
     pointer-events: none;
+    width: 1940px;
+}
+#business .bg-02 img{
+    width: auto;
+    max-width: 1940px;
 }
 #business .bg-03{
     position: absolute;
@@ -585,6 +593,7 @@
 }
 #business .banner{
     position: relative;
+    z-index: 5;
 }
 #business #business-01 .banner{
     padding-bottom: 125px;
@@ -1300,7 +1309,15 @@
 
 
 
+@media (max-width: 1600px) {
 
+    #business .bg-02{
+        transform: unset;
+        top: -50%;
+    }
+
+
+}
 
 
 
@@ -1341,7 +1358,10 @@
         font-size: 34px;
         line-height: 52px;
     }
-
+    #business .bg-02{
+        left: -200px;
+        top: -45%;
+    }
 
 
 
@@ -1780,6 +1800,10 @@
     #business .support .support-title:before,
     #business .support .support-list:before{
         width: calc(100% + 30px);
+    }
+    #business .bg-02 {
+        left: -400px;
+        top: -55%;
     }
 
 

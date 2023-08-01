@@ -27,9 +27,23 @@
     font-weight: 400;
     color: #fff;
     letter-spacing: 0.4px;
-    border-bottom: 1px solid #ACACAC;
+    /*border-bottom: 1px solid #ACACAC;*/
     padding-bottom: 24px;
     margin-bottom: 26px;
+    position: relative;
+}
+#contact .heading .ttl-en:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-top: 1px solid #ACACAC;
+    transition: 1.2s cubic-bezier(.43,.05,.17,1);
+    transition-delay: 1s;
+}
+#contact .heading .ttl-en.is-inview:after{
+    width: 100%;
 }
 #contact .heading .ttl-ja{
     display: block;

@@ -10,12 +10,12 @@
             </picture>
         </div>
 
-        <div class="bg-02">
-            <picture>
-                <source media="(min-width: 768px)" srcset="/wp-content/uploads/home_bg03_pc.png">
-                <img decoding="async" class="sizes" src="/wp-content/uploads/home_bg03_pc.png" alt="">
-            </picture>
-        </div>
+<!--        <div class="bg-02">-->
+<!--            <picture>-->
+<!--                <source media="(min-width: 768px)" srcset="/wp-content/uploads/home_bg03_pc.png">-->
+<!--                <img decoding="async" class="sizes" src="/wp-content/uploads/home_bg03_pc.png" alt="">-->
+<!--            </picture>-->
+<!--        </div>-->
 
         <div class="bg-03">
             <picture>
@@ -111,6 +111,12 @@
                     </div>
                 </div>
                 <div class="flow">
+                    <div class="bg-02">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="/wp-content/uploads/home_bg03_pc.png">
+                            <img decoding="async" class="sizes" src="/wp-content/uploads/home_bg03_pc.png" alt="">
+                        </picture>
+                    </div>
                     <div class="inner">
                         <h2 class="heading-block u-inview">
                             <span class="ttl-en">FLOW</span>

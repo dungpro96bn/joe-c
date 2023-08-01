@@ -2,8 +2,15 @@
 
 <div class="bg-fix bg-pc">
     <picture>
-        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg 2x">
-        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.jpg" alt="">
+        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.png 2x">
+        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/img_fix_home.png" alt="">
+    </picture>
+</div>
+
+<div class="bg01 bg-home">
+    <picture>
+        <source srcset="/wp-content/uploads/home_bg01_pc.png">
+        <img class="sizes" src="/wp-content/uploads/home_bg01_pc.png" alt="">
     </picture>
 </div>
 
@@ -12,12 +19,7 @@
     <div class="home-inner">
 
         <div class="empower-the-world">
-            <div class="bg01 bg-home">
-                <picture>
-                    <source srcset="/wp-content/uploads/home_bg01_pc.png">
-                    <img class="sizes" src="/wp-content/uploads/home_bg01_pc.png" alt="">
-                </picture>
-            </div>
+
             <div class="inner">
                 <div class="bg-fix bg-sp">
                     <picture>

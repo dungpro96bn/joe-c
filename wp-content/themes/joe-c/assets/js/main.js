@@ -26,7 +26,7 @@ jQuery(function ($) {
                 $('.fadeIn-delay, .border-animation').each(function () {
                     var ptop = $(this).offset().top;
                     var scroll = $(window).scrollTop();
-                    var windowHeight = $(window).height() - 200;
+                    var windowHeight = $(window).height() - 100;
                     if (scroll > ptop - windowHeight) {
                         $(this).addClass('is-inview active');
                     }
@@ -35,7 +35,7 @@ jQuery(function ($) {
             $('.fadeIn-delay, .border-animation').each(function () {
                 var ptop = $(this).offset().top;
                 var firstView = $(window).scrollTop();
-                var windowHeight = $(window).height() - 200;
+                var windowHeight = $(window).height() - 100;
                 if (firstView > ptop - windowHeight) {
                     $(this).addClass('is-inview active');
                 }
@@ -77,7 +77,7 @@ jQuery(function ($) {
                 $('.u-inview, .u-inview-left, .fadeIn-bg').each(function () {
                     var ptop = $(this).offset().top;
                     var scroll = $(window).scrollTop();
-                    var windowHeight = $(window).height() - 200;
+                    var windowHeight = $(window).height() - 100;
                     if (scroll > ptop - windowHeight) {
                         $(this).addClass('is-inview');
                     }
@@ -87,7 +87,7 @@ jQuery(function ($) {
             $('.u-inview, .u-inview-left, .fadeIn-bg').each(function () {
                 var ptop = $(this).offset().top;
                 var firstView = $(window).scrollTop();
-                var windowHeight = $(window).height() - 200;
+                var windowHeight = $(window).height() - 100;
                 if (firstView > ptop - windowHeight) {
                     $(this).addClass('is-inview');
                 }
