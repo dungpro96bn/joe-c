@@ -23,11 +23,11 @@ endif;
         </a>
     </div>
     <div class="footer-top">
-        <div class="bg-footer-01"></div>
-        <div class="bg-footer-02"></div>
-        <div class="bg-footer-03">
-            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/bg-dots.png" alt="">
-        </div>
+<!--        <div class="bg-footer-01"></div>-->
+<!--        <div class="bg-footer-02"></div>-->
+<!--        <div class="bg-footer-03">-->
+<!--            <img class="sizes" src="--><?php //bloginfo('template_directory'); ?><!--/assets/images/bg-dots.png" alt="">-->
+<!--        </div>-->
         <div class="contact-banner">
             <div class="inner">
                 <div class="content">

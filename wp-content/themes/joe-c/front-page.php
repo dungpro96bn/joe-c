@@ -329,7 +329,7 @@
                             <span class="ttl-en">ABOUT</span>
                             <span class="ttl-ja">JOEについて</span>
                         </h2>
-                        <hr class="about-hr border-animation">
+                        <hr class="about-hr u-inview">
                         <p class="sub-ttl u-inview">私たち<br class="pc-br"/>JOE協同組合について<br class="pc-br"/>紹介いたします</p>
                     </div>
                     <div class="right-content">
