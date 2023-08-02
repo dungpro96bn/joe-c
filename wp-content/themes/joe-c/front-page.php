@@ -315,7 +315,6 @@
         </div>
 
         <div class="about-block">
-            <div class="bg-about"></div>
             <div class="bg03 bg-home">
                 <picture>
                     <source srcset="/wp-content/uploads/home_bg03_pc.png">

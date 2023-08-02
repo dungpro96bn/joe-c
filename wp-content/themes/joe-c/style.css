@@ -463,6 +463,7 @@ body{
     background-image: url("/wp-content/uploads/border_contact_pc.png");
     background-position: center;
     z-index: 4;
+    left: 1px;
 }
 #footer .footer-top .contact-banner{
     width: 100%;
