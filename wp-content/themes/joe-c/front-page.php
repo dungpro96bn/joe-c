@@ -19,7 +19,11 @@
     <div class="home-inner">
 
         <div class="empower-the-world">
-
+            <div class="scroll-page">
+                <a class="scroll fadeIn-delay delay-1" href="#message">
+                    <div class="text en"><span>SCROLL</span></div>
+                </a>
+            </div>
             <div class="inner">
                 <div class="bg-fix bg-sp">
                     <picture>
@@ -91,11 +95,6 @@
                             <a href="/news/" class="btn-view">VIEW ALL</a>
                         </div>
                     </div>
-                </div>
-                <div class="scroll-page">
-                    <a class="scroll fadeIn-delay delay-1" href="#message">
-                        <div class="text en"><span>SCROLL</span></div>
-                    </a>
                 </div>
             </div>
         </div>
