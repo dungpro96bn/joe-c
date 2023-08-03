@@ -106,8 +106,12 @@ function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcr
             $str.= '<li>>　'. $post -> post_title .'</li>';
         } elseif(is_404()){
             $str.='<li>>　ページがみつかりません。</li>';
-        } else{
+        } elseif (is_category() || is_single()) {
+            $str.='<li>>　'. get_the_title() .'</li>';
+        } elseif (is_archive()) {
             $str.='<li>>　'. $post_type->label .'</li>';
+        } else{
+            $str.='<li>>　'. wp_title('', '').'</li>';
         }
         $str.='</ol>';
         $str.='</div>';

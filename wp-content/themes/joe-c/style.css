@@ -600,6 +600,9 @@ body{
 #breadcrumb ol li a{
     color: #8D8D8D;
 }
+#breadcrumb ol li br{
+    display: none;
+}
 #breadcrumb ol li{
     font-size: 16px;
     line-height: 28px;
