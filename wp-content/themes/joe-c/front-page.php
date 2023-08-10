@@ -100,9 +100,11 @@
         </div>
 
         <div id="message" class="message-block">
-            <div class="pc-br body-border border-01"></div>
-            <div class="pc-br border-02"></div>
-            <div class="pc-br body-border border-03"></div>
+            <div class="sub-bg">
+                <div class="pc-br body-border border-01"></div>
+                <div class="pc-br border-02"></div>
+                <div class="pc-br body-border border-03"></div>
+            </div>
             <div class="inner">
                 <div class="right-content">
                     <h2 class="heading-block u-inview">
