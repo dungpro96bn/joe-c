@@ -227,6 +227,7 @@
     width: 0 !important;
     height: 0 !important;
     overflow: hidden;
+    padding: 0 !important;
 }
 #contact .group-item .mwform-checkbox-field .mwform-checkbox-field-text:before {
     content: "";

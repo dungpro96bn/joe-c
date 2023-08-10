@@ -43,11 +43,15 @@
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/gsap.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/app.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>
-<!--    <script src="--><?php //bloginfo('template_directory'); ?><!--/assets/js/jquery.cookie.min.js"></script>-->
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
+
+    <div class="body-border border-01"></div>
+    <div class="border-02"></div>
+    <div class="body-border border-03"></div>
+
 <div class="outer">
     <header id="header-menu" class="header-menu">
         <div class="header-nav">

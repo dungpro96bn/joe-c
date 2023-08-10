@@ -62,8 +62,8 @@
                     <p class="t1 fadeIn-delay delay-1">学びと支援を、世界中へ。</p>
                     <div class="mainImg">
                         <picture>
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_mainImg_sp.jpg">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_mainImg_sp.jpg" alt="">
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_mainImg_sp.png">
+                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_mainImg_sp.png" alt="">
                         </picture>
                     </div>
                     <div class="news-block">
@@ -100,6 +100,9 @@
         </div>
 
         <div id="message" class="message-block">
+            <div class="pc-br body-border border-01"></div>
+            <div class="pc-br border-02"></div>
+            <div class="pc-br body-border border-03"></div>
             <div class="inner">
                 <div class="right-content">
                     <h2 class="heading-block u-inview">
@@ -117,6 +120,9 @@
         </div>
 
         <div class="promise-block">
+            <div class="body-border border-01"></div>
+            <div class="border-02"></div>
+            <div class="body-border border-03"></div>
             <div class="bg02 bg-home">
                 <picture>
                     <source srcset="/wp-content/uploads/home_bg02_pc.png">
@@ -192,6 +198,9 @@
         </div>
 
         <div class="cross-talk">
+            <div class="body-border border-01"></div>
+            <div class="border-02"></div>
+            <div class="body-border border-03"></div>
             <div class="inner">
                 <div class="cross-talk-content">
                     <div class="left-content">
@@ -314,6 +323,9 @@
         </div>
 
         <div class="about-block">
+            <div class="body-border border-01"></div>
+            <div class="border-02"></div>
+            <div class="body-border border-03"></div>
             <div class="bg03 bg-home">
                 <picture>
                     <source srcset="/wp-content/uploads/home_bg03_pc.png">

@@ -1,15 +1,5 @@
 
-#homepage:after {
-    /*content: "";*/
-    /*position: absolute;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*background-image: url("/wp-content/uploads/bg_border.png");*/
-    /*background-position: center;*/
-    /*z-index: 2;*/
-}
+
 
 #homepage {
     overflow: hidden;
@@ -120,6 +110,7 @@
 
 .empower-the-world .inner {
     position: relative;
+    z-index: 5;
 }
 
 .empower-the-world .scroll-page {
@@ -291,7 +282,7 @@
 /*promise-block*/
 .promise-block {
     background-color: #E6E6E6;
-    background-image: url("/wp-content/uploads/bg_border.png");
+    /*background-image: url("/wp-content/uploads/bg_border.png");*/
     position: relative;
     background-position: center;
     z-index: 6;
@@ -304,7 +295,7 @@
     height: 300px;
     top: -300px;
     left: 0;
-    background-image: url("/wp-content/uploads/bg_border.png");
+    /*background-image: url("/wp-content/uploads/bg_border.png");*/
     background-position: center;
     pointer-events: none;
 }
@@ -455,8 +446,7 @@
     padding-top: 52px;
     padding-bottom: 172px;
     background-color: #E6E6E6;
-    background-image: url("/wp-content/uploads/bg_border.png");
-    background-position: center;
+    position: relative;
 }
 
 .cross-talk .inner {
@@ -773,16 +763,16 @@
 }
 
 .about-block:after {
-    content: "";
-    position: absolute;
-    background-image: url("/wp-content/uploads/bg_border.png");
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    pointer-events: none;
+    /*content: "";*/
+    /*position: absolute;*/
+    /*background-image: url("/wp-content/uploads/bg_border.png");*/
+    /*background-position: center;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*z-index: 2;*/
+    /*pointer-events: none;*/
 }
 
 .about-block .inner {
@@ -1388,7 +1378,7 @@
         margin-top: -72px;
         z-index: -1;
         display: block;
-        opacity: .70;
+        /*opacity: .70;*/
     }
 
     .news-block {
@@ -1479,11 +1469,6 @@
         font-size: 14px;
         line-height: 22px;
         margin-bottom: 22px;
-    }
-
-
-    .promise-block {
-        background-image: url("/wp-content/uploads/bg_border_sp.png");
     }
 
     .promise-block .promise-content {
@@ -1585,7 +1570,6 @@
     .cross-talk {
         padding-top: 15px;
         padding-bottom: 58px;
-        background-image: url("/wp-content/uploads/bg_border_sp.png");
     }
 
     .cross-talk .left-content {

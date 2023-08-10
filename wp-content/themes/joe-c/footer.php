@@ -23,6 +23,9 @@ endif;
         </a>
     </div>
     <div class="footer-top">
+        <div class="body-border border-01"></div>
+        <div class="border-02"></div>
+        <div class="body-border border-03"></div>
         <div class="contact-banner">
             <div class="inner">
                 <div class="content">

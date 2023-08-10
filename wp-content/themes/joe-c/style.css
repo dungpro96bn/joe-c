@@ -270,6 +270,12 @@ body::-webkit-scrollbar-thumb:hover {
     background-clip: content-box;
 }
 
+html #wpadminbar{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
 .inner {
     max-width: 1240px;
     margin: auto;
@@ -338,14 +344,48 @@ body::-webkit-scrollbar-thumb:hover {
     transition-property: opacity,transform;
 }
 
-
 body{
-    background-image: url("/wp-content/uploads/bg_border.png");
-    background-position: center;
+    position: relative;
 }
+
+.body-border:before,
+.body-border:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid #CECECE;
+    top: 0;
+    width: 1px;
+    pointer-events: none;
+}
+.body-border.border-01:before{
+    left: 11.2%;
+}
+.body-border.border-01:after{
+    left: 30.6%;
+}
+.body-border.border-03:before{
+    left: 69.5%;
+}
+.body-border.border-03:after{
+    left: 88.9%;
+}
+.border-02:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 1px solid #CECECE;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    pointer-events: none;
+}
+
 
 .outer{
     overflow: hidden;
+    position: relative;
+    z-index: 5;
 }
 
 /*Header*/
@@ -455,16 +495,6 @@ body{
     mix-blend-mode: multiply;
     object-fit: cover;
 }
-#footer .footer-top:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("/wp-content/uploads/border_contact_pc.png");
-    background-position: center;
-    z-index: 4;
-    left: 1px;
-}
 #footer .footer-top .contact-banner{
     width: 100%;
     position: relative;
@@ -496,6 +526,11 @@ body{
     font-weight: 400;
     padding-left: 5px;
     margin-bottom: 16px;
+}
+#footer .body-border:before,
+#footer .body-border:after,
+#footer .border-02:before{
+    border-left: 1px solid rgba(22,60,77,.28);
 }
 #footer .btn-contact{
     display: flex;
@@ -573,6 +608,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 5;
 }
 #breadcrumb .aioseo-breadcrumbs{
     width: 100%;
@@ -657,6 +694,23 @@ body{
 }
 #back-top a p{
     padding-left: 2px;
+}
+
+
+@media (max-width: 1440px) {
+
+    .body-border:after{
+        display: none;
+    }
+    .body-border.border-01:before {
+        left: 18%;
+    }
+    .body-border.border-03:before {
+        left: 82%;
+    }
+
+
+
 }
 
 
@@ -816,10 +870,6 @@ body{
 
 @media (max-width: 767px) {
 
-    body{
-        background-image: url("/wp-content/uploads/bg_border_sp.png");
-    }
-
     .inner{
         padding: 0 23px;
     }
@@ -861,9 +911,6 @@ body{
         background-image: url("/wp-content/uploads/bg_banner_contact_sp.png");
         height: 290px;
         padding-top: 0px;
-    }
-    #footer .footer-top:after{
-        background-image: url("/wp-content/uploads/border_contact_sp.png");
     }
     #footer .heading .ttl-en {
         font-size: 51px;
@@ -962,8 +1009,6 @@ body{
     }
 
 }
-
-
 
 
 
